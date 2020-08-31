@@ -16,7 +16,7 @@ You should Remix this project, then save it in your account and rename it, so yo
 
 Instructions for [how to remix a Trinket project](remixing_trinket_projects/REMIX.md)
 
-Now, get started coding your own version of *Hangman*.
+Now you are ready to get started coding your own version of *Hangman*.
 
 [Go to Step 1 - making the list of pictures](step01-list_of_pictures)
 
