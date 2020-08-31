@@ -24,7 +24,6 @@ Unfortunately when you first remix a trinket project you don't see a button to S
 
 7. You can now see the Save button. Click on the Save button to save your project. If you want to give it a new name then click on the text after My Trinkets/ and type a new name.
 
-![alt text](remix4.png "My Trinkets")
 
 Go back to the main page of [Hangman](../README.md)
 
