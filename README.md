@@ -8,11 +8,13 @@ Here is a link to a video showing how the game works. The video also shows the P
 
 This Python project has been designed to be built up using the website Trinket [trinket.io](https://trinket.io/) so you should make sure you have a Trinket account before you start this project. If you have an email address you can open a new account at [trinket.io](https://trinket.io/) by clicking on the button labelled Sign Up.
 
-These instructions start from a Trinket project called Hangman_starter which you can find at
+These instructions start from a Trinket project called *Hangman_starter* which you can find at
 
 [https://trinket.io/library/trinkets/df98f23340](https://trinket.io/library/trinkets/df98f23340)
 
-While you are logged in to Trinket you should Remix this project, then save it and rename it, so you can work on your own version.
+You should Remix this project, then save it in your account and rename it, so you can work on your own version.
+
+Instructions for [how to remix a Trinket project](remixing_trinket_project/REMIX.md)
 
 Now, get started coding your own version of *Hangman*.
 
