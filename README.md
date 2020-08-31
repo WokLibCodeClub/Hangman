@@ -14,7 +14,7 @@ These instructions start from a Trinket project called *Hangman_starter* which y
 
 You should Remix this project, then save it in your account and rename it, so you can work on your own version.
 
-Instructions for [how to remix a Trinket project](remixing_trinket_project/REMIX.md)
+Instructions for [how to remix a Trinket project](remixing_trinket_projects/REMIX.md)
 
 Now, get started coding your own version of *Hangman*.
 
