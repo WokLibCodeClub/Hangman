@@ -4,7 +4,7 @@ This is a Python version of the word-guessing game Hangman, which is more than 1
 
 Here is a link to a video showing how the game works. The video also shows the Python version in action, and demonstrates the first steps in writing your own version of the game:
 
-(https://youtu.be/FOJO9RdFEF8)
+[https://youtu.be/FOJO9RdFEF8](https://youtu.be/FOJO9RdFEF8)
 
 This Python project has been designed to be built up using the website Trinket [trinket.io](https://trinket.io/) so you should make sure you have a Trinket account before you start this project. If you have an email address you can open a new account at [trinket.io](https://trinket.io/) by clicking on the button labelled Sign Up.
 
