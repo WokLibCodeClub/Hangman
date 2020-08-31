@@ -6,7 +6,7 @@
 
 
 
-Go back to the main page of [Hangman](./README.md)
+Go back to the main page of [Hangman](../README.md)
 
 
 
