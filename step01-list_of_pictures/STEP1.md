@@ -65,4 +65,11 @@ When you're writing code in Trinket it always assumes you're in the *edit* panel
 
 Be warned: it's **terribly** easy to forget to do this, and accidentally make edits to your code!
 
+Did you manage to make a loop which worked? Go to [this link](./STEP1A.md) to see one way to do it.
+
+We don't need the loop for the game. Instead, remove your loop, and at the end of the code add the code
+```
+print(pictures[0])
+```
+
 [Go to Step 2 - Choosing and displaying the mystery word](../step02-choose_word_and_display/STEP2.md)
