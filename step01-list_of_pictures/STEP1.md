@@ -57,12 +57,12 @@ a = input()
 ```
 which simply pauses the programme until you press any key, otherwise your loop will show all the pictures so quickly you won't be able to see them.
 
+Don't forget about **_indenting_** lines of code inside the loop.
+
 ### Note about typing in the right hand panel
 
 When you're writing code in Trinket it always assumes you're in the *edit* panel so anything you type on the keyboard will appear in the code. This is no good if you want to type the response to a question in the **Result** panel on the right. The way to do this is the click the mouse once inside the right panel before you type anything, and this switches the **_focus_** to the right panel, so what you type will appear there and not inside your code.
 
 Be warned: it's **terribly** easy to forget to do this, and accidentally make edits to your code!
-
-Don't forget about **_indenting_** lines of code inside the loop.
 
 [Go to Step 2 - Choosing and displaying the mystery word](../step02-choose_word_and_display/STEP2.md)
