@@ -27,17 +27,32 @@ The smart way is to copy the last item in the list, paste it onto the end of the
 
 Each of the items in a list is a text string, but you might have noticed that these text strings don't begin and end with `"` or `'`, they begin and end with `"""` - a triple double-quote mark. What is the meaning of a triple quote mark?
 
-You can see an explanation of this near the end of the introductory [video](https://youtu.be/FOJO9RdFEF8) for this project, but the simple explanation is that a text string which is inside *triple* quotes can spread across several lines, so if you want your string to 
+You can see an explanation of this near the end of the introductory [video](https://youtu.be/FOJO9RdFEF8) for this project, but the simple explanation is that a text string which is inside *triple* quotes can spread across several lines, so any time you want your string start a new line you type ENTER inside the triple quotes, and this will be shown as a new line when Python prints the text.
+
+## Special feature of the ```\``` character
 
 
-The starter project has already 
 
-We need to create a set of pictures for each stage of the game, and we will put the set of these pictures in a list.
-
-In the starter project there is a list called ```pictures``` which already has the empty gallows picture, and the picture showing the head of the man. Notice how 
 
 ## Check your handiwork
 
-You should check that your sequence of pictures looks all right and the pictures a
+Once you've finished making your list you should check that your sequence of pictures looks all right and the pictures are in the right order. At the end of the starter code there is a line of code
+```
+print(pictures[0])
+```
+
+which will print the first item from the list. You can change the number in square brackets to see any of the other items in your list.
+
+## Challenge
+
+How would you make a Python **_loop_** to show the pictures one after another without having to keep typing a different number in the square brackets?
+
+You will want your loop to start with ``for```, and inside your loop you should put the code which will clear the screen so the next picture is drawn in the same place - that line is already in the starter project, it is ```system('cls')```, then the line which will print the item from the list, then as the last line in your loop put this line:
+```
+a = input()
+```
+which simply pauses the programme until you press any key, otherwise your loop will show all the pictures so quickly you won't be able to see them.
+
+Don't forget about **_indenting_** lines of code inside the loop.
 
 [Go to Step 2 - Choosing and displaying the mystery word](../step02-choose_word_and_display/STEP2.md)
