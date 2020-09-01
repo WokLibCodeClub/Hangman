@@ -1,6 +1,6 @@
-# How does the player guess a letter?
+# Has the player won or lost?
 
 
 
-[Go to Step 4 - Working out the winner](../step04-find_the_winner/STEP4.md)
+[Go back to main page](../)
 
