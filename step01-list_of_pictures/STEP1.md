@@ -47,7 +47,7 @@ print(pictures[0])
 
 which will print the first item from the list. You can change the number in square brackets to see any of the other items in your list.
 
-## Challenge
+# Challenge
 
 How would you make a Python **_loop_** to show the pictures one after another without having to keep typing a different number in the square brackets?
 
