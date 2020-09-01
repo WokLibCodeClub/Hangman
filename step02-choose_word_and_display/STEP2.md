@@ -77,8 +77,15 @@ There is a special Python function called ```join()``` which lets you print a li
 
 # Challenge
 
-Think of a name for a variable for the word
+Write three lines of code to go at the end which will
 
+* make a text variable which consists of the same number of underscores as there are letters in the original word. You will need the ```len()``` function and multiplication
+* turn the text variable from a text string into a list (you can use the same variable name for both if you want)
+* print the variable with a space between each character
+
+Save your code and test it. Did it work?
+
+[Here](./STEP2A.md) is one way to do it.
 
 
 [Go to Step 3 - Guessing a letter](../step03-guessing_a_letter/STEP3.md)
