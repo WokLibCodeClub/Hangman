@@ -27,7 +27,7 @@ The smart way is to copy the last item in the list, paste it onto the end of the
 
 Each of the items in a list is a text string, but you might have noticed that these text strings don't begin and end with `"` or `'`, they begin and end with `"""` - a triple double-quote mark. What is the meaning of a triple quote mark?
 
-You can see an explanation of this near the end of the introductory [video](https://youtu.be/FOJO9RdFEF8) for this project, but the simple explanation is that a text string which is inside *triple* quotes can spread across several lines, so any time you want your string start a new line you type ENTER inside the triple quotes, and this will be shown as a new line when Python prints the text.
+You can see an explanation of this near the end of the introductory video [(link to video)](https://youtu.be/FOJO9RdFEF8) for this project, but the simple explanation is that a text string which is inside *triple* quotes can spread across several lines, so any time you want your string start a new line you type ENTER inside the triple quotes, and this will be shown as a new line when Python prints the text.
 
 ## Special feature of the ```\``` character
 
