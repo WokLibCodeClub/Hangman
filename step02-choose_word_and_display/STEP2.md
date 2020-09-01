@@ -77,7 +77,7 @@ There is a special Python function called ```join()``` which lets you print a li
 
 # Challenge
 
-Put all the ideas in the previous paragraphs together to write three lines of code to go at the end which will
+Put all the ideas in the previous paragraphs together to write three lines of code. The first two lines go after the code to choose the word to guess. The third line goes at the end after the line ```print(pictures[0])```. Your lines of code should
 
 * make a text variable which consists of the same number of underscores as there are letters in the original word. You will need the ```len()``` function and multiplication
 * turn the text variable from a text string into a list (you can use the same variable name for both if you want)
