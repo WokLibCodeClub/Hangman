@@ -51,11 +51,32 @@ word_to_guess = choice(wordlist)
 
 # Displaying the word to guess
 
-We've now got the computer to choose a word for us to try and guess. Next we want the computer to display the word, but instead of each of the letters in the word we want the computer to print an underscore character. But if we just printed a number of underscore characters one after another they would run together to make a single line, and we wouldn't be able to see how many letters there are in the word to guess. So we need to display the word with an underscore instead of every letter, **_and_** a space between each underscore. How can we do that?
+We've now got the computer to choose a word for us to try and guess. Next we want the computer to **display** the word, but instead of each of the letters in the word we want the computer to print an underscore character. But if we just printed a number of underscore characters one after another they would run together to make a single line, and we wouldn't be able to see how many letters there were in the word to guess. So we need to display the word with an underscore instead of every letter, **_and_** a space between each underscore. How can we do that?
 
+(As the game progresses we need to update this display so that the correct guesses appear in the word in place of the uncerscores.)
 
+### How many letters are there in the word to guess?
 
-We need to display an underscore character for each letter in the mystery word. But how do we know how many letters it has?
+First let's count how many letters there are in the word we have to guess. We can do this easily because text strings in Python are a lot like lists, and you probably know that the function for counting the number of items in a list is ```len()```. We can use the same function for counting the number of letters in a text string.
+
+### Multiplication with text strings
+
+**_What!!!!???_** Why would you want to do multiplication with text strings?
+
+In fact you can use multiplication to create copies of a text string. If I had a text string ```"abc"``` and I multiplied it by three ```"abc" * 3``` the result would be a text string ```"abcabcabc"```. Here's how we can use this.
+
+## Challenge
+
+Think of a name for a variable for the word
+
+### Turning a text string into a list
+
+Our display text string now contains an underscore instead of each letter in the original word, and as the player makes successful guesses we will update this text string, replacing the underscores with the correctly guessed letters.
+
+Unfortunately you can't easily just replace one character in a text string in Python. What you *can* do is convert the text string to a list, then you can change individual items as you like. 
+
+### Printing a list with a space between each item
+
 
 [Go to Step 3 - Guessing a letter](../step03-guessing_a_letter/STEP3.md)
 
