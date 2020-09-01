@@ -65,10 +65,6 @@ First let's count how many letters there are in the word we have to guess. We ca
 
 In fact you can use multiplication to create copies of a text string. If I had a text string ```"abc"``` and I multiplied it by three ```"abc" * 3``` the result would be a text string ```"abcabcabc"```. Here's how we can use this: we need a variable to contain the word display; we need to count how many letters in the original word; then we make the word display variable equal to ```"_"``` (underscore character) multiplied by the number of letters in the original word.
 
-## Challenge
-
-Think of a name for a variable for the word
-
 ### Turning a text string into a list
 
 Our display text string now contains an underscore instead of each letter in the original word, and as the player makes successful guesses we will update this text string, replacing the underscores with the correctly guessed letters.
@@ -78,6 +74,11 @@ Unfortunately you can't easily just replace one character in a text string in Py
 ### Printing a list with a space between each item
 
 There is a special Python function called ```join()``` which lets you print a list with a space between each item. If I want to print my list ```textlist``` with a space between each item I would use the code ```print(join(textlist, ' '))```. 
+
+# Challenge
+
+Think of a name for a variable for the word
+
 
 
 [Go to Step 3 - Guessing a letter](../step03-guessing_a_letter/STEP3.md)
