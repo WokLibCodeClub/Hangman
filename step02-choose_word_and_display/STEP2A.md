@@ -3,6 +3,9 @@ In this example the variable to hold the original word has been named ```word_to
 ```
 word_with_guesses = "_" * len(word_to_guess)
 word_with_guesses = list(word_with_guesses)
+
+
+
 print(join(word_with_guesses, ' ')) 
 ```
 
