@@ -51,7 +51,7 @@ which will print the first item from the list. You can change the number in squa
 
 How would you make a Python **_loop_** to show the pictures one after another without having to keep typing a different number in the square brackets?
 
-You will want your loop to start with ``for```, and inside your loop you should put the code which will clear the screen so the next picture is drawn in the same place - that line is already in the starter project, it is ```system('cls')```, then the line which will print the item from the list, then as the last line in your loop put this line:
+You will want your loop to start with ```for```, and inside your loop you should put the code which will clear the screen so the next picture is drawn in the same place - that line is already in the starter project, it is ```system('cls')```, then the line which will print the item from the list, then as the last line in your loop put this line:
 ```
 a = input()
 ```
