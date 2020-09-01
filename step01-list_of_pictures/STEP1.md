@@ -8,4 +8,4 @@ In the starter project there is a list called ```pictures``` which already has t
 
 
 
-[Go to Step 2 - Choosing and displaying the mystery word](step02-choose-word-and-display/STEP2.md)
+[Go to Step 2 - Choosing and displaying the mystery word](step02-choose_word_and_display/STEP2.md)
