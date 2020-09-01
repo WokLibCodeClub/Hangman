@@ -33,7 +33,7 @@ You can see an explanation of this near the end of the introductory video [(link
 
 You might decide to use the backslash ```\``` character for one of the figure's legs - unfortunately this creates a small problem. 
 
-In Python strings sometimes people wanted to include types of formatting which wouldn't be available from the normal keyboard, so it was decided that if you put a backslash character in the string you could follow that with some other character which would tell the string to include formatting. One example is if you put ```\n``` inside a string it won't print the backslash or the ```n```, it will start a new line. 
+In Python strings sometimes people wanted to include types of formatting which wouldn't be available from the normal keyboard, so it was decided that if you put a backslash character in the string you could follow that with some other character which would tell the string to include formatting. One example is if you put ```\n``` inside a string and print it Python won't print the backslash or the ```n```, it will start a new line. 
 
 If we want a string where we actually **_do_** want to print a backslash (for example for one of the figure's legs) we simply put two backslashes ```\\```, and Python will ignore the first, and print the second.
 
