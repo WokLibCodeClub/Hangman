@@ -67,7 +67,7 @@ In fact you can use multiplication to create copies of a text string. If I had a
 
 ### Turning a text string into a list
 
-Our display text string now contains an underscore instead of each letter in the original word, and as the player makes successful guesses we will update this text string, replacing the underscores with the correctly guessed letters.
+Our display text string now contains an underscore instead of each letter in the original word, and as the player makes successful guesses we would like to update this text string, replacing the underscores with the correctly guessed letters.
 
 Unfortunately you can't easily just replace one character in a text string in Python. What you *can* do is convert the text string to a list, where each letter becomes a new item in the list, then you can change individual items as you like. If I have a string variable ```textstring``` and I want to convert it into a list variable ```textlist``` then I would use the code ```textlist = list(textstring)```.
 
