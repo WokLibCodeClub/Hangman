@@ -4,7 +4,7 @@ In this version of Hangman the player has six guesses at letters in the mystery 
 
 This means that the picture which is displayed is linked to the number of wrong guesses so far: if there are no wrong guesses the picture shows just the gallows and no parts of the person; if there has been one wrong guess so far the picture shows the gallows and the person's head, two wrong guesses and we show the gallows, head and body, and so on up to a maximum of six wrong guesses.
 
-In Python the smartest way to achieve this is to make a numeric variable to hold the number of wrong guesses, and put all the different pictures in a _*list*_ variable. The programme chooses which picture to display by using the number of wrong guesses as the _*index*_ number for the list.
+In Python the smartest way to achieve this is to make a numeric variable to hold the number of wrong guesses, and put all the different pictures in a **_list_** variable. The programme chooses which picture to display by using the number of wrong guesses as the _*index*_ number for the list.
 
 Example - we'll put all the pictures in a list variable called ```pictures``` and if there have been four wrong guesses the variable with the number of wrong guesses will be set to 4 and the Python code to show the right picture will be
 ```
