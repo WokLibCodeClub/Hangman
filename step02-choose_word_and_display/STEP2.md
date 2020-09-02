@@ -20,7 +20,7 @@ In Python we often write code where we need to access some information from anot
 
 In Trinket projects we can add files to the project, like the ```Hangman words.txt``` file, but if we weren't using Trinket we would have to indicate to the Python code which folder on the computer's hard drive the file was located in.
 
-For our game we need to add three lines of code after the end of the ```pictures``` list variable. The first line to add is:
+For our game we need to add three lines of code in the VARIABLES section, after the end of the ```pictures``` list variable. The first line to add is:
 ```
 wordfile = open('Hangman words.txt', 'r')
 ```
