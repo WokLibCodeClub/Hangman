@@ -1,11 +1,14 @@
 In this example the variable to hold the original word has been named ```word_to_guess``` and the variable to hold the display text has been named ```word_with_guesses```.
 
+These two lines go at the end of the VARIABLES section:
+
 ```
 word_with_guesses = "_" * len(word_to_guess)
 word_with_guesses = list(word_with_guesses)
+```
+and this line goes at the very end of the code
 
-
-
+```
 print(join(word_with_guesses, ' ')) 
 ```
 
