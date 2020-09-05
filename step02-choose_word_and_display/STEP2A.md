@@ -9,7 +9,7 @@ word_with_guesses = list(word_with_guesses)
 and this line goes at the very end of the code
 
 ```
-print(join(word_with_guesses, ' ')) 
+print(' '.join(word_with_guesses)) 
 ```
 
 
