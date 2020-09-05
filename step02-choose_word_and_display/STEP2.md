@@ -73,7 +73,7 @@ Unfortunately you can't easily just replace one character in a text string in Py
 
 ### Printing a list with a space between each item
 
-There is a special Python function called ```join()``` which lets you print a list with a space between each item. If I want to print my list ```textlist``` with a space between each item I would use the code ```print(join(textlist, ' '))```. Note the item after the comma - this shows the character we want to use to put in between each item, which is a space in this example. If I wanted an asterisk between each item I could use ```print(join(textlist, '*'))```
+There is a special Python function called ```join()``` which lets you print a list with a space between each item. If I want to print my list ```textlist``` with a space between each item I would use the code ```print(' '.join(textlist))```. Note the item after the comma - this shows the character we want to use to put in between each item, which is a space in this example. If I wanted an asterisk between each item I could use ```print('*'.join(textlist))```
 
 # Challenge
 
