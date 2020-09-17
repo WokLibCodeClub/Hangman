@@ -63,7 +63,7 @@ First let's count how many letters there are in the word we have to guess. We ca
 
 **_What!!!!???_** Why would you want to do multiplication with text strings?
 
-In fact you can use multiplication to create copies of a text string. If I had a text string ```"abc"``` and I multiplied it by three ```"abc" * 3``` the result would be a text string ```"abcabcabc"```. Here's how we can use this: we need a variable to contain the word display; we need to count how many letters in the original word; then we make the word display variable equal to ```"_"``` (underscore character) multiplied by the number of letters in the original word.
+In fact you can use multiplication to create copies of a text string. If I had a text string ```"abc"``` and I multiplied it by three ```"abc" * 3``` the result would be a text string ```"abcabcabc"```. Here's how we can use this: we need a variable to contain the display with underscores; we need to count how many letters in the original word; then we make the word display variable equal to ```"_"``` (underscore character) multiplied by the number of letters in the original word.
 
 ### Turning a text string into a list
 
