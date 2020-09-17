@@ -15,13 +15,12 @@ which will print the **_5th_** item in the list. (Do you remember why it will pr
 In the starter project we have already started a list variable called ```pictures``` and put the first two items in the list, separated by a comma, which are the pictures to use when there have been no wrong guesses, and one wrong guess.
 
 These pictures are really text characters arranged cleverly so they seem to draw a picture. The symbols used so far are ```_ | O /```. By choosing different text characters you should be able to work out how to draw the person's body, arms and legs.
- 
+
 ## Your first task
 
-Your first task is to add five more pictures to this list for the situations where there have been 2, 3, 4, 5 and 6 wrong guesses. 
+Your first task is to add five more pictures to this list for the situations where there have been 2, 3, 4, 5 and 6 wrong guesses.
 
 The smart way is to copy the last item in the list, paste it onto the end of the list (**don't forget to put in a comma**) then add another part of the figure to the pasted version. Then copy the new last item, paste it on the end of the list and edit it, and so on.
-
 
 ## Triple quotes as a way of making a Python string
 
@@ -37,14 +36,12 @@ In Python strings sometimes people wanted to include types of formatting which w
 
 If we want a string where we actually **_do_** want to print a backslash (for example for one of the figure's legs) we simply put two backslashes ```\\```, and Python will ignore the first, and print the second.
 
-
 ## Check your handiwork
 
 Once you've finished making your list you should check that your sequence of pictures looks all right and the pictures are in the right order. At the end of the starter project, in the MAIN CODE section, there is a line of code
 ```
 print(pictures[0])
 ```
-
 which will print the first item from the list. You can change the number in square brackets to see any of the other items in your list.
 
 # Challenge
