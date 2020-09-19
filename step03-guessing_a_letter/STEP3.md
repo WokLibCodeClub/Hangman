@@ -106,7 +106,7 @@ As we go through the ```for``` loop the value of loop_variable increases, starti
 
 If the variable for the loop is called ```l``` and the player's guess variable is ```a``` and the mystery word is in a variable called ```word_to_guess``` then the code I need is an ```if``` statement (which must be indented as it is inside the ```for``` loop) like this:
 ```
-  if word_to_guess[i] == a:
+  if word_to_guess[l] == a:
 ```
 This is comparing the player's guess with a letter in the mystery word. *If they are equal* we need to do two things
 
