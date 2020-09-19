@@ -98,7 +98,7 @@ for loop_variable in range(number_of_times_to_run_the_loop):
 ```
 Choose your loop_variable name for the loop.
 
-What Python function can you use to get the number_of_times_to_run_the_loop? *Clue*: this needs to be the number of letters in the mystery word - look back to Step 2.
+What Python function can you use to get the number_of_times_to_run_the_loop? *Clue*: this needs to be the number of letters in the mystery word - look back to [Step 2](../step02-choose_word_and_display/STEP2.md).
 
 Inside the loop we want to check each letter in the mystery word against the player's guess. We can use the fact that in Python a piece of text, for example a word, behaves a lot like a list: if I have a text variable ```myword = "GENIUS"``` then I can check what the 3rd letter is with the code ```myword[2]```, just as if the letters were items in a list.
 
