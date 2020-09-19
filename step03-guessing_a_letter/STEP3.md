@@ -18,7 +18,7 @@ A lot of things have to happen at the time when the player guesses a letter. We 
 
 6. the computer prints the list of all the wrong guesses so far, if any
 
-7. the computer asks the player to guess a letter ... back to step 1.
+7. the computer asks the player to guess a letter ... back to item 1.
 
 ### We need some new variables
 
