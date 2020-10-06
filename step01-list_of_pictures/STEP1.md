@@ -39,7 +39,7 @@ If we want a string where we actually **_do_** want to print a backslash (for ex
 ## Check your handiwork
 
 Once you've finished making your list you should check that your sequence of pictures looks all right and the pictures are in the right order. At the end of the starter project, in the MAIN CODE section, there is a line of code
-```
+```python
 print(pictures[0])
 ```
 which will print the first item from the list. You can change the number in square brackets to see any of the other items in your list.
