@@ -1,4 +1,4 @@
-```
+```python
 for p in pictures:
   system('cls')
   print(p)
