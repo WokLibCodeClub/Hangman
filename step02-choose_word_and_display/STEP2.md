@@ -39,7 +39,7 @@ The contents of the file are now added to the list variable ```wordlist```. The 
 ### Choosing a word at random from the list
 
 This is the easiest of the three steps, because Python has a ready-made function for choosing an item at random from a list. The Python function is ```choice()``` where you put the name of the list variable inside the brackets. ```choice()``` is one of the functions contained in the ```random``` library, so if you want to use ```choice()``` in your code you have to **_import_** this library, which means at the top of your code you need to include the line
-```
+```python
 from random import choice
 ```
 (this should already be in the starter project). 
