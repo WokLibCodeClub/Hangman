@@ -1,6 +1,6 @@
-```
+```python
 for p in pictures:
-  system('cls)
+  system('cls')
   print(p)
   a = input()
 ```
