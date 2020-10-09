@@ -2,13 +2,13 @@ In this example the variable to hold the original word has been named ```word_to
 
 These two lines go at the end of the VARIABLES section:
 
-```
+```python
 word_with_guesses = "_" * len(word_to_guess)
 word_with_guesses = list(word_with_guesses)
 ```
 and this line goes at the very end of the code
 
-```
+```python
 print(' '.join(word_with_guesses)) 
 ```
 
