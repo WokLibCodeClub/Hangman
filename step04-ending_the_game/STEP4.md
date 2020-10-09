@@ -4,10 +4,10 @@ As said in the last section we are going to put all the code for the player's gu
 
 This will be a forever loop, which means it will keep going forever, except we will add in a bit of code to see if the player has won or lost and if either of these is true then we will jump out of the forever loop using the Python command ```break```.
 
-### Making a forever loop
+## Making a forever loop
 
 A Python forever loop begins with the code
-```
+```python
 while True:
 ```
 then all the lines of code which we want to be *inside* the forever loop have to be indented.
@@ -18,31 +18,31 @@ If you didn't put a comment in your code you will have to go back to the previou
 
 Save your code and test it. You should be able to keep guessing letters, and the display should update correctly as you make a right guess or a wrong guess, but you will find that it keeps asking you to guess a letter even after the gallows is complete, or you have completely guessed the word. That's because we haven't yet coded the end of the game, and it is stuck in the forever loop.
 
-### Breaking out of the forever loop
+## Breaking out of the forever loop
 
 We need to write code which will work out if the player has won or lost, to know when to break out of the forever loop. We will put this code at the end of the forever loop (*inside* the loop).
 
 If the player has *lost* then the body hanging on the gallows is complete. How many wrong guesses does this take? We could test the variable which holds the number of wrong guesses to find out if the player has lost using:
-```
+```python
 if wrong_guesses_variable == losing number:
   break
 ```
 This code will break out of the forever loop when the player has lost (you will have to put the name of your number of wrong guesses variable, and the right number to make your code work).
 
 If the player has *won* then all the letters have been guessed. In this case there will be no more underscore characters in the list variable we were using to display the mystery word. Python has a very neat way of checking if a particular item is present in a list. To check if the text "_" is present in the list we could use
-```
+```python
 if "_" in name_of_list_variable:
   break
 ```
 (substitute the name of your list variable). This code will break out of the loop if there is a "\_" character anywhere in the list, **but that's not what we want!** We actually want to test if the "_" character is *absent* from the list, so in Python we can do this by adding in the word ```not```:
-```
+```python
 if "_" not in name_of_list_variable:
   break
 ```
 and this will now jump out of the loop if the player has won.
 
 We have two ```if``` blocks to add to the end of the ```while True``` loop, but Python actually gives a way to test **_both_** conditions with the one ```if``` block using the key word ```or```:
-```
+```python
 if wrong_guesses_variable == losing number or "_" not in name_of_list_variable:
   break
 ```
@@ -50,14 +50,14 @@ if wrong_guesses_variable == losing number or "_" not in name_of_list_variable:
 
 Save your code and test it. You should find the code will stop after you have won or lost, because in both cases we have now jumped out of the forever loop. What do we want to happen now?
 
-### Coding a win or a loss
+## Coding a win or a loss
 
 We're nearly there.
 
 At the end of the code, *outside* the ```while True:``` loop (so not indented), we put code either to congratulate the player for being clever, or tell them they've lost, and let them know what the mystery word was.
 
 Our code will only ever get to these lines after the game has been won or lost but which is it? We can use the same tests we used inside the forever loop.
-```
+```python
 if wrong_guesses_variable == losing number: # this means the player has lost
   [WRITE CODE TO SAY THE PLAYER HAS LOST AND TO TELL THEM WHAT THE MYSTERY WORD WAS]
 else: # this means the player has won
@@ -80,4 +80,3 @@ There are some extras you could put in to your game:
 Have fun.
 
 [Go back to main page](../README.md)
-
