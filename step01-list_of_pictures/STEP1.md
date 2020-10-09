@@ -7,7 +7,7 @@ This means that the picture which is displayed is linked to the number of wrong 
 In Python the smartest way to achieve this is to make a numeric variable to hold the number of wrong guesses, and put all the different pictures in a **_list_** variable. The programme chooses which picture to display by using the number of wrong guesses as the **_index_** number for the list.
 
 Example - we'll put all the pictures in a list variable called ```pictures``` and if there have been four wrong guesses the variable with the number of wrong guesses will be set to 4 and the Python code to show the right picture will be
-```
+```python
 print(pictures[number of wrong guesses variable])
 ```
 which will print the **_5th_** item in the list. (Do you remember why it will print the 5th item although the index number is 4?)
@@ -49,7 +49,7 @@ which will print the first item from the list. You can change the number in squa
 How would you make a Python **_loop_** to show the pictures one after another without having to keep typing a different number in the square brackets?
 
 You will want your loop to start with ```for```, and inside your loop you should put the code which will clear the screen so the next picture is drawn in the same place - that line is already in the starter project, it is ```system('cls')```, then the line which will print the item from the list, then as the last line in your loop put this line:
-```
+```python
 a = input()
 ```
 which simply pauses the programme until you press any key, otherwise your loop will show all the pictures so quickly you won't be able to see them.
@@ -65,7 +65,7 @@ Be warned: it's **terribly** easy to forget to do this, and accidentally make ed
 Did you manage to make a loop which worked? Go to [this link](./STEP1A.md) to see one way to do it.
 
 We don't need the loop for the game. Instead, remove your loop, and at the end of the code add the code
-```
+```python
 print(pictures[0])
 ```
 
