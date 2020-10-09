@@ -14,29 +14,29 @@ There are three stages to this
 
 (If you have done the Raspberry Pi/Code Club project called [Team Chooser](https://projects.raspberrypi.org/en/projects/team-chooser) you will already have seen this process in action.)
 
-### Opening the file
+## Opening the file
 
 In Python we often write code where we need to access some information from another file on the computer, or even a file on the worldwide web. If the file just contains text characters the Python command to open a file looks like this ```open('name of the file to be opened', 'method for opening file')```. We put the name of the file, inside single or double quotes, first inside the brackets, then the *"mode"* of opening, which means whether we just want to read data from the file ```'r'```, or add more data on to the end of the file ```'a'``` or write data to a completely new file ```'w'```.
 
 In Trinket projects we can add files to the project, like the ```Hangman words.txt``` file, but if we weren't using Trinket we would have to indicate to the Python code which folder on the computer's hard drive the file was located in.
 
 For our game we need to add three lines of code in the VARIABLES section, after the end of the ```pictures``` list variable. The first line to add is:
-```
+```python
 wordfile = open('Hangman words.txt', 'r')
 ```
 which opens the project file called ```Hangman words.txt```, tells Python we just want to read data from the file, and links the open file to a variable called ```wordfile```.
 
-### Reading the list of words from the file
+## Reading the list of words from the file
 
 We need to make a **list** variable to hold the list of words. This example calls the variable ```wordlist``` but you can call yours whatever you like.
 
 The code for reading the list of words from the file into the list variable is
-```
+```python
 wordlist = wordfile.read().splitlines()
 ```
 The contents of the file are now added to the list variable ```wordlist```. The bit of code at the end of this line, ```.splitlines()```, tells Python that whenever the file has a new line (which is for every word) Python should make a new item in the list.
 
-### Choosing a word at random from the list
+## Choosing a word at random from the list
 
 This is the easiest of the three steps, because Python has a ready-made function for choosing an item at random from a list. The Python function is ```choice()``` where you put the name of the list variable inside the brackets. ```choice()``` is one of the functions contained in the ```random``` library, so if you want to use ```choice()``` in your code you have to **_import_** this library, which means at the top of your code you need to include the line
 ```python
@@ -45,11 +45,11 @@ from random import choice
 (this should already be in the starter project). 
 
 We will put the random choice in another variable, which is called ```word_to_guess``` in this example. You can choose a different name if you want. Here is the line of code:
-```
+```python
 word_to_guess = choice(wordlist)
 ```
 
-# Displaying the word to guess
+## Displaying the word to guess
 
 We've now got the computer to choose a word for us to try and guess. Next we want the computer to **display** the word, but instead of each of the letters in the word we want the computer to print an underscore character. But if we just printed a number of underscore characters one after another they would run together to make a single line, and we wouldn't be able to see how many letters there were in the word to guess. So we need to display the word with an underscore instead of every letter, **_and_** a space between each underscore. How can we do that?
 
