@@ -149,7 +149,7 @@ system('cls')
 ```
 Second, ```print``` the item from the list of pictures which matches the number of wrong guesses the player has made. (The number of wrong guesses will go inside square brackets after the name of the list of pictures.)
 
-Third, ```print``` the partially guessed word, using the ```join()``` function to put a space between each character (this is the same code you have used already to print the partially guessed word). You could add a bit of text inside the brackets before ```join``` to explain what this line means.
+Third, ```print``` the partially guessed word, using the ```join()``` function to put a space between each character (this is the same code you have used already to print the partially guessed word). You could add a bit of text inside the brackets before ```' '.join``` to explain what this line means.
 
 Fourth, ```print``` the list of wrong guesses using the ```join()``` function to put a space between each item. We don't need this line if there aren't any wrong guesses, so we should put this line in an ```if``` block:
 ```python
