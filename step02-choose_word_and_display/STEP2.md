@@ -22,7 +22,7 @@ In Trinket projects we can add files to the project, like the ```Hangman_words.t
 
 For our game we need to add three lines of code in the VARIABLES section, after the end of the ```pictures``` list variable. The first line to add is:
 ```python
-wordfile = open('Hangman words.txt', 'r')
+wordfile = open('Hangman_words.txt', 'r')
 ```
 which opens the project file called ```Hangman words.txt```, tells Python we just want to read data from the file, and links the open file to a variable called ```wordfile```.
 
