@@ -107,7 +107,7 @@ print(pictures[0])
 print("Word to guess:   " + ' '.join(word_with_guesses))
 
 # Print the mystery word for testing purposes
-# We will remove this line when the game is finished otherwise it spoils the game!
+# We will comment this line when the game is finished otherwise it spoils the game!
 # The \n inside the quotes tells print to start a new line
 print('\nThe word to guess is: ' + word_to_guess)
 
