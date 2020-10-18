@@ -154,9 +154,9 @@ Third, ```print``` the partially guessed word, using the ```join()``` function t
 Fourth, ```print``` the list of wrong guesses using the ```join()``` function to put a space between each item. We don't need this line if there aren't any wrong guesses, so we should put this line in an ```if``` block:
 ```python
 if len(wrong_guesses_list) > 0:
-  print("Wrong guesses so far: " + ' '.join(wrong_guesses_list))
+  print("\nWrong guesses so far: " + ' '.join(wrong_guesses_list))
 ```
-Here we are counting the items in the list of wrong guesses and only printing the list if it is not empty. Notice, I have added a bit of extra text to the beginning of the print function just to explain to the player what this list is.
+Here we are counting the items in the list of wrong guesses and only printing the list if it is not empty. Notice, I have added a bit of extra text to the beginning of the print function just to explain to the player what this list is. The ```\n``` forces Python to print a blank line to space out the display better.
 
 ### Testing, testing...
 
