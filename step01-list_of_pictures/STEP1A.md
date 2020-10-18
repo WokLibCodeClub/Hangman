@@ -2,7 +2,7 @@
 for p in pictures:
   system('cls')
   print(p)
-  a = input()
+  input()
 ```
 
 
