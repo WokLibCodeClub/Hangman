@@ -139,7 +139,7 @@ while True:
   # Display the correct picture for the number of wrong guesses
   print(pictures[num_wrong_guesses])
   
-  # Print the 
+  # Print the word to guess with any correct guesses substituted for underscores
   print("Word to guess:   " + ' '.join(word_with_guesses))
   
   if len(wrong_guesses_list) > 0:
