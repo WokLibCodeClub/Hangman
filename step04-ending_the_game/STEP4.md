@@ -48,7 +48,7 @@ if wrong_guesses_variable == losing number or "_" not in name_of_list_variable:
 ```
 (you will have to adapt this line for your own variable names). The ```if``` line needs to be on a single line of code from the ```if``` to the ```:``` but in your browser you might find this rather long line has been split into two. Make sure you put it all on one line in your code.
 
-Save your code and test it. You should find the code will stop after you have won or lost, because in both cases we have now jumped out of the forever loop. What do we want to happen now?
+Save your code and test it. You should find the code will stop after you have won or lost, because in both cases we have now jumped out of the forever loop. The code won't ask you for any more guesses, but it won't tell you if you won or lost. What do we want to happen now?
 
 ## Coding a win or a loss
 
