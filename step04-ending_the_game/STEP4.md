@@ -63,7 +63,9 @@ if wrong_guesses_variable == losing number: # this means the player has lost
 else: # this means the player has won
   [WRITE CODE TO GIVE A MESSAGE OF CONGRATULATIONS]
 ```
-Test your code again. If it's all working the programme will let you know if you've won or lost. For the last step you should now locate the line of code you added for debugging (which displayed the mystery word at the beginning of the game) and add a ```#``` character at the beginning to turn it into a comment. Python will now ignore this line and not print the mystery word before it's been guessed.
+Test your code again. If it's all working the programme will let you know if you've won or lost. 
+
+For the last step you should now locate the line of code you added for debugging (which displayed the mystery word at the beginning of the game) and add a ```#``` character at the beginning to turn it into a comment. Python will now ignore this line and not print the mystery word before it's been guessed.
 
 You have now coded Hangman! Well done. See if you can beat your own game.
 
