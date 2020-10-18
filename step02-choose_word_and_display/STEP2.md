@@ -4,7 +4,7 @@ In the rules of Hangman one player selects a mystery word - which has to be a no
 
 For the Python version we need a way for the computer to select a mystery word which fits the rules. The simplest way is to provide the code with a list of valid words, and have the computer select one at random.
 
-In the starter project you will see, next to the tab titled ```main.py```, another tab titled ```Hangman words.txt```. This refers to a computer *file* which has been uploaded to the Trinket project. If you click on this tab you will see a list of 400 words, all in capital letters, which are from six to 10 letters long and fit the rules. We will have the computer select a word at random from this list.
+In the starter project you will see, next to the tab titled ```main.py```, another tab titled ```Hangman_words.txt```. This refers to a computer *file* which has been uploaded to the Trinket project. If you click on this tab you will see a list of 400 words, all in capital letters, which are from six to 10 letters long and fit the rules. We will have the computer select a word at random from this list.
 
 There are three stages to this
 
