@@ -141,7 +141,7 @@ We are nearly done with coding the player's guess!
 
 ### Reset the screen after the player's guess
 
-These lines of code need to be added to the end, after the last ```if``` block.
+These lines of code need to be added to the end, after the last ```if``` block, but they are not indented, because they are not part of the if test.
 
 First, clear the screen using
 ```python
