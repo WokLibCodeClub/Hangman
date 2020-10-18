@@ -16,7 +16,7 @@ If you followed the suggestion to put a comment in your code at the start of the
 
 If you didn't put a comment in your code you will have to go back to the previous step and find where this would go.
 
-Save your code and test it. You should be able to keep guessing letters, and the display should update correctly as you make a right guess or a wrong guess, but you will find that it keeps asking you to guess a letter even after the gallows is complete, or you have completely guessed the word. That's because we haven't yet coded the end of the game, and it is stuck in the forever loop.
+Save your code and test it. You should be able to keep guessing letters, and the display should update correctly as you make a right guess or a wrong guess, but you will find that it keeps asking you to guess a letter even after the gallows is complete, or you have completely guessed the word, and when you make another guess it might give an error ```IndexError: list index out of range```. This means that you are trying to print a picture from the pictures list that doesn't exist. This happens because we haven't yet coded the end of the game, and it is stuck in the forever loop.
 
 ## Breaking out of the forever loop
 
