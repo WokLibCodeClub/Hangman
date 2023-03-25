@@ -20,7 +20,7 @@ We usually link the opened file to a variable which is a *file* type of variable
 wordfile = open('Hangman_words.txt', 'r')
 ```
 
-## Reading the list of words from the file
+## Reading the words from the file into a Python list
 
 We need to make a **list** variable to hold the list of words. This example calls the variable ```wordlist``` but you can choose your own name if you like.
 
