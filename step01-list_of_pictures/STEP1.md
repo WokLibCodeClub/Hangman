@@ -66,7 +66,7 @@ Did you manage to make a loop which worked?
 
 <details><summary>Click here to see one way to do it</summary>
 
-```
+```python
 for p in pictures:
   system('cls')
   print(p)
@@ -77,9 +77,12 @@ for p in pictures:
 
 <p>
 
-We don't need the loop for the game. Instead, remove your loop, and at the end of the code add the code
+We don't actually need this loop for the game. It was just an excuse to see if you remembered how to make a ```for``` loop. So remove your loop, and go back to the original code which ends with this line
+  
 ```python
 print(pictures[0])
 ```
 
+which will print the first item in the pictures list, for when we are ready to start playing the game.
+  
 [Go to Step 2 - Choosing and displaying the mystery word](../step02-choose_word_and_display/STEP2.md)
