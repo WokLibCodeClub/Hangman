@@ -7,20 +7,18 @@ In the starter project you will see a tab titled ```main.py```, and next to it a
 There are three operations we need to code to do this
 
 * open the file
-* read the file into a Python list variable
-* select an item at random from the list variable as the mystery word
+* read the words from the file into a Python list variable
+* select an word at random from the list as the mystery word
 
 ## Opening the file
 
 In Python we often write code where we need to access some information from another file on the computer, or even a file on the worldwide web. If the file just contains text characters we use the Python function ```open()```, and inside the brackets we put the name of the file, (which must be inside single or double quotes), then a comma,  then the *"mode"* of opening, which means whether we tell Python if we want to read data from the file (mode ```'r'```), or  start writing in a completely new file (mode ```'w'```), or add more data on to the end of an existing file (mode ```'a'```).
 
-In Trinket projects we can add files to the project, like the ```Hangman_words.txt``` file, but if we weren't using Trinket we would have to indicate to the Python code which folder on the computer's hard drive the file was located in.
+We usually link the opened file to a variable which is a *file* type of variable. Because we only want to read the data from the word list we will use the ```r``` mode. Here is the code for opening the file with a file variable called ```wordfile```. Put this line after the end of the ```pictures``` list:
 
-For our game we need to add three lines of code in the VARIABLES section, after the end of the ```pictures``` list variable. The first line to add is:
 ```python
 wordfile = open('Hangman_words.txt', 'r')
 ```
-which opens the project file called ```Hangman words.txt```, tells Python we just want to read data from the file, and links the open file to a variable called ```wordfile```.
 
 ## Reading the list of words from the file
 
