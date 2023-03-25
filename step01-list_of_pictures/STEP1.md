@@ -8,7 +8,7 @@ We can do this in Python by making a variable to hold the number of wrong guesse
 
 In the starter project we have already started a list variable called ```pictures``` and put the first two items (pictures) in the list, separated by a comma.
 
-These pictures are really just combinations of text symbols arranged cleverly so they seem to draw a picture. The symbols used so far are ```_ | O /```. By adding different text symbols you should be able to draw the person's body, arms and legs.
+These pictures are really just combinations of text symbols arranged cleverly so they seem to draw a picture. The symbols used so far are ```_ | O /```. By adding these and other text symbols you should be able to draw the person's body, arms and legs.
 
 ## Your first task
 
