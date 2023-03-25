@@ -1,6 +1,6 @@
 # Creating the set of pictures in a list variable
 
-In this version of Hangman the player has six guesses at letters in the mystery word. Each time the player guesses a letter which is **_not_** in the word the picture changes and adds an extra bit of body to the figure of the person being hanged.
+In this version of Hangman the player has six guesses at letters in the mystery word. Each time the player makes a *wrong* guess (guesses a letter which is **_not_** in the word) the picture adds an extra bit of body to the figure of the person being hanged.
 
 This means that the picture which is displayed is linked to the number of wrong guesses so far: if there are no wrong guesses the picture shows just the gallows and no parts of the person; if there has been one wrong guess so far the picture shows the gallows and the person's head, two wrong guesses and we show the gallows, head and body, and so on up to a maximum of six wrong guesses.
 
