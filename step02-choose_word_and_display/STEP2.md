@@ -24,11 +24,15 @@ wordfile = open('Hangman_words.txt', 'r')
 
 We need to make a **list** variable to hold the list of words. This example calls the variable ```wordlist``` but you can choose your own name if you like.
 
-The code for reading the list of words from the file into the list variable is
+The code for reading the list of words from the file into the list variable looks a bit complicated! It is
+
 ```python
 wordlist = wordfile.read().splitlines()
 ```
-The contents of the file are now added to the list variable ```wordlist```. The bit of code at the end of this line, ```.splitlines()```, tells Python that whenever the file has a new line (which is for every word) Python should make a new item in the list.
+
+Put this line after the previous line.
+
+The middle part of this line is ```wordfile.read()``` which *reads* all the words from the file into Python storage, and the bit at the end ```.splitlines()``` means that whenever Python finds a new line in the file (which is for every new word) it puts the new line in a different list item. The beginning of this line ```wordlist = ``` simply creates a list variable called ```wordlist``` which will hold all the words as a list. You could add a line of code to *print* this list if you want to see what it looks like.
 
 ## Choosing a word at random from the list
 
