@@ -12,11 +12,11 @@ These pictures are really just combinations of text symbols arranged cleverly so
 
 ## Your first task
 
-Your first task is to add five more pictures to this list for where there have been 2, 3, 4, 5 and 6 wrong guesses.
+Your first task is to add five more pictures to the pictures list: first add the body, then the left arm, then the right arm, then the left leg, then the right leg. We will use these pictures for 2, 3, 4, 5 and 6 wrong guesses.
 
-The smart way is to copy the last item in the list, paste it onto the end of the list (**don't forget to put in a comma**) then add another part of the figure to the pasted version. Then copy the new last item, paste it on the end of the list and edit it, and so on.
+One smart way to add a new picture is to copy the previous picture in the list, paste it onto the end of the list (**don't forget to put in a comma**) then add a new body part to the pasted version.
 
-## Triple quotes as a way of making a Python string
+## Triple quotes as a way of making a Python string which goes over several lines
 
 Each of the items in a list in the starter project is a *text string*, but you might have noticed that these text strings don't begin and end with `'` or `"` like normal text strings, they begin and end with `"""` - a triple double-quote mark. What is the meaning of a triple quote mark?
 
