@@ -22,7 +22,7 @@ wordfile = open('Hangman_words.txt', 'r')
 
 ## Reading the list of words from the file
 
-We need to make a **list** variable to hold the list of words. This example calls the variable ```wordlist``` but you can call yours whatever you like.
+We need to make a **list** variable to hold the list of words. This example calls the variable ```wordlist``` but you can choose your own name if you like.
 
 The code for reading the list of words from the file into the list variable is
 ```python
