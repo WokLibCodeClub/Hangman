@@ -2,29 +2,23 @@
 
 In this version of Hangman the player has six guesses at letters in the mystery word. Each time the player makes a *wrong* guess (guesses a letter which is **_not_** in the word) the picture adds an extra bit of body to the figure of the person being hanged.
 
-This means that the picture which is displayed is linked to the number of wrong guesses so far: if there are no wrong guesses the picture shows just the gallows and no parts of the person; if there has been one wrong guess so far the picture shows the gallows and the person's head, two wrong guesses and we show the gallows, head and body, and so on up to a maximum of six wrong guesses.
+This means which picture we display is controlled by the number of wrong guesses: if there are no wrong guesses so far we show the picture with just the gallows; if there has been one wrong guess so far we show the gallows and the person's head, two wrong guesses and we show the gallows, head and body, and so on up to a maximum of six wrong guesses.
 
-In Python the smartest way to achieve this is to make a numeric variable to hold the number of wrong guesses, and put all the different pictures in a **_list_** variable. The programme chooses which picture to display by using the number of wrong guesses as the **_index_** number for the list.
+We can do this in Python by making a variable to hold the number of wrong guesses, and putting all the pictures in a Python **list**. Then we can use the number of wrong guesses as the **_index_** for the picture in the pictures list that we want to show.
 
-Example - we'll put all the pictures in a list variable called ```pictures``` and if there have been four wrong guesses the variable with the number of wrong guesses will be set to 4 and the Python code to show the right picture will be
-```python
-print(pictures[number of wrong guesses variable])
-```
-which will print the **_5th_** item in the list. (Do you remember why it will print the 5th item although the index number is 4?)
+In the starter project we have already started a list variable called ```pictures``` and put the first two items (pictures) in the list, separated by a comma.
 
-In the starter project we have already started a list variable called ```pictures``` and put the first two items in the list, separated by a comma, which are the pictures to use when there have been no wrong guesses, and one wrong guess.
-
-These pictures are really text characters arranged cleverly so they seem to draw a picture. The symbols used so far are ```_ | O /```. By choosing different text characters you should be able to work out how to draw the person's body, arms and legs.
+These pictures are really just combinations of text symbols arranged cleverly so they seem to draw a picture. The symbols used so far are ```_ | O /```. By adding different text symbols you should be able to draw the person's body, arms and legs.
 
 ## Your first task
 
-Your first task is to add five more pictures to this list for the situations where there have been 2, 3, 4, 5 and 6 wrong guesses.
+Your first task is to add five more pictures to this list for where there have been 2, 3, 4, 5 and 6 wrong guesses.
 
 The smart way is to copy the last item in the list, paste it onto the end of the list (**don't forget to put in a comma**) then add another part of the figure to the pasted version. Then copy the new last item, paste it on the end of the list and edit it, and so on.
 
 ## Triple quotes as a way of making a Python string
 
-Each of the items in a list is a text string, but you might have noticed that these text strings don't begin and end with `"` or `'`, they begin and end with `"""` - a triple double-quote mark. What is the meaning of a triple quote mark?
+Each of the items in a list in the starter project is a *text string*, but you might have noticed that these text strings don't begin and end with `'` or `"` like normal text strings, they begin and end with `"""` - a triple double-quote mark. What is the meaning of a triple quote mark?
 
 You can see an explanation of this near the end of the introductory video [(link to video)](https://youtu.be/FOJO9RdFEF8) for this project, but the simple explanation is that a text string which is inside *triple* quotes can spread across several lines, so any time you want your string start a new line you type ENTER inside the triple quotes, and this will be shown as a new line when Python prints the text.
 
@@ -42,7 +36,7 @@ Once you've finished making your list you should check that your sequence of pic
 ```python
 print(pictures[0])
 ```
-which will print the first item from the list. You can change the number in square brackets to see any of the other items in your list.
+which will print the first item from the list. You can change the number in square brackets to see the other items in your list.
 
 # Challenge
 
