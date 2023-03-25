@@ -36,7 +36,7 @@ Once you've finished making your list you should check that your sequence of pic
 ```python
 print(pictures[0])
 ```
-which will print the first item from the list. You can change the number in square brackets to see the other items in your list.
+which will print the first item from the list. Change the number in square brackets to see the other items in your list.
 
 # Challenge
 
