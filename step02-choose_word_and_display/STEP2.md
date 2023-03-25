@@ -4,17 +4,15 @@ In the rules of Hangman one player selects a mystery word - which has to be a no
 
 In the starter project you will see a tab titled ```main.py```, and next to it another tab titled ```Hangman_words.txt```. This tab refers to a computer *file* which has been uploaded to the Trinket project. If you click on this tab you will see a list of 400 words, all in capital letters, which are from six to 10 letters long and fit the rules. We will have the computer select a word at random from this list as the mystery word to guess.
 
-There are three stages to this
+There are three operations we need to code to do this
 
 * open the file
-* read the file into a list variable
-* select at random an item from the list variable
-
-(If you have done the Raspberry Pi/Code Club project called [Team Chooser](https://projects.raspberrypi.org/en/projects/team-chooser) you will already have seen this process in action.)
+* read the file into a Python list variable
+* select an item at random from the list variable as the mystery word
 
 ## Opening the file
 
-In Python we often write code where we need to access some information from another file on the computer, or even a file on the worldwide web. If the file just contains text characters the Python command to open a file looks like this ```open('name of the file to be opened', 'method for opening file')```. We put the name of the file, inside single or double quotes, first inside the brackets, then the *"mode"* of opening, which means whether we just want to read data from the file ```'r'```, or add more data on to the end of the file ```'a'``` or write data to a completely new file ```'w'```.
+In Python we often write code where we need to access some information from another file on the computer, or even a file on the worldwide web. If the file just contains text characters we use the Python function ```open()```, and inside the brackets we put the name of the file, (which must be inside single or double quotes), then a comma,  then the *"mode"* of opening, which means whether we tell Python if we want to read data from the file (mode ```'r'```), or  start writing in a completely new file (mode ```'w'```), or add more data on to the end of an existing file (mode ```'a'```).
 
 In Trinket projects we can add files to the project, like the ```Hangman_words.txt``` file, but if we weren't using Trinket we would have to indicate to the Python code which folder on the computer's hard drive the file was located in.
 
