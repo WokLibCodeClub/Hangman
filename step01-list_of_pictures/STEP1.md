@@ -51,6 +51,7 @@ You will want your loop to start with ```for```, then a list variable, then ```i
 * pause before going on to the next picture
 
 The code for clearing the screen is ```system('cls')``` and you should find this in the starter project.
+
 To pause the code use
 
 ```python
