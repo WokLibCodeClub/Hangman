@@ -48,13 +48,16 @@ You will want your loop to start with ```for```, then a list variable, then ```i
 * print the item from the list
 * pause before going on to the next picture
 
-, then as the last line in your loop put this line:
+The code for clearing the screen is ```system('cls')``` and you should find this in the starter project.
+To pause the code use
+
 ```python
 input()
 ```
-which simply pauses the programme until you press any key, otherwise your loop will show all the pictures so quickly you won't be able to see them.
 
-Don't forget about **_indenting_** lines of code inside the loop.
+which means the programme will wait until you press the Enter key
+
+Don't forget about **_indenting_** the lines of code inside the loop.
 
 ### Note about typing in the right hand panel
 
