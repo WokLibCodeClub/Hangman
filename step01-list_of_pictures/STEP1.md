@@ -46,7 +46,7 @@ How would you make a Python **_loop_** to show the pictures one after another wi
 
 You will want your loop to start with ```for```, then a list variable, then ```in```, then your pictures list, then a ```:```. On the next lines, (which need to be indented) you should put the code which will 
 
-* clear the screen so the next picture is drawn in the same place - that line is already in the starter project, it is ```system('cls')```, 
+* clear the screen 
 * print the item from the list
 * pause before going on to the next picture
 
