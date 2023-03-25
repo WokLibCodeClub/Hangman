@@ -8,7 +8,7 @@ Here is a link to a video showing how the game works. The video also shows the P
 
 This Python project has been designed to be built up using the website Trinket [trinket.io](https://trinket.io/) so you should make sure you have a Trinket account before you start this project. If you have an email address you can open a new account at [trinket.io](https://trinket.io/) by clicking on the button labelled Sign Up.
 
-These instructions start from a Trinket project called *Hangman_starter* which you can find at
+There is a starter Trinket project called *Hangman_starter* which you can find at
 
 [https://trinket.io/library/trinkets/df98f23340](https://trinket.io/library/trinkets/df98f23340)
 
