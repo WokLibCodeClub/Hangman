@@ -42,7 +42,8 @@ from random import choice
 ```
 (this should already be in the starter project). 
 
-We will put the random choice in another variable, which is called ```word_to_guess``` in this example. You can choose a different name if you want. Here is the line of code:
+We will make another variable to hold the random choice, called ```word_to_guess``` in this example. You can choose a different name if you want. Here is the line of code, which will go after the previous two lines:
+
 ```python
 word_to_guess = choice(wordlist)
 ```
