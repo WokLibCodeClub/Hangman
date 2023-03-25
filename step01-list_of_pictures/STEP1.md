@@ -50,7 +50,7 @@ You will want your loop to start with ```for```, then a list variable, then ```i
 * print the item from the list
 * pause before going on to the next picture
 
-The code for clearing the screen is ```system('cls')``` and you should find this in the starter project.
+The code for clearing the screen is ```system('cls')``` and you should find this in the starter project already.
 
 To pause the code use
 
@@ -58,17 +58,18 @@ To pause the code use
 input()
 ```
 
-which means the programme will wait until you press the Enter key
+which means the programme will wait until you press the Enter key. (This gives you a chance to see each picture before the loop goes on to the next one.)
 
 Don't forget about **_indenting_** the lines of code inside the loop.
 
-### Note about typing in the right hand panel
+Did you manage to make a loop which worked?
 
-When you're writing code in Trinket it always assumes you're in the *edit* panel so anything you type on the keyboard will appear in the code. This is no good if you want to type the response to a question in the **Result** panel on the right. The way to do this is the click the mouse once inside the right panel before you type anything, and this switches the **_focus_** to the right panel, so what you type will appear there and not inside your code.
+<details><summary>Click here to see one way to do it</summary>
 
-Be warned: it's **terribly** easy to forget to do this, and accidentally make edits to your code!
 
-Did you manage to make a loop which worked? Go to [this link](./STEP1A.md) to see one way to do it.
+</details>
+
+<p>
 
 We don't need the loop for the game. Instead, remove your loop, and at the end of the code add the code
 ```python
