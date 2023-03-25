@@ -66,7 +66,7 @@ Did you manage to make a loop which worked?
 
 <details><summary>Click here to see one way to do it</summary>
 
-  ```
+```
 for p in pictures:
   system('cls')
   print(p)
