@@ -112,7 +112,7 @@ Run your code. Your display should look something like this:
 
 ![Step 2 display](step2.png "Display so far")
 
-(except, of course, your mystery word will probably be something else, and the number of underscores will also be different).
+(except, of course, your mystery word will probably be something else, and the number of underscores may also be different).
 
 [Go to Step 3 - Guessing a letter](../step03-guessing_a_letter/STEP3.md)
 
