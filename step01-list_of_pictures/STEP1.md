@@ -61,7 +61,7 @@ The code for clearing the screen is ```system('cls')``` and you should find this
 To pause the code use
 
 ```python
-input()
+  input()
 ```
 
 which means the programme will wait until you press the Enter key (but see the note below on typing in the Result panel). This gives you a chance to see each picture before the loop goes on to the next one.
