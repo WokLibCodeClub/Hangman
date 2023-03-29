@@ -1,28 +1,32 @@
 # How does the player guess a letter?
 
-Next we need to write the code so that the player can try to guess one of the letters in the mystery word.
+Next we need to write the code so that the player can try to guess one of the letters in the mystery word. This will happen over and over again as the game progresses, so the code for guessing will be contained in a Python ***loop***.
 
 ## What happens when the player guesses a letter
 
-A lot of things have to happen at the time when the player guesses a letter. We will build the code up gradually for each of these items and eventually put them all inside a loop which runs until the player guesses the word or is hanged. This is the overall picture:
+This is the overall sequence of our loop:
 
 1. the computer asks the player to guess a letter
 
 2. the computer checks if that letter is in the mystery word
 
-3. *if it isn't* the computer increases the number of wrong guesses by one, but *if it is* then the computer updates the list which contains guessed letters and underscores, and replaces underscores with the correct guessed letter
+3. *if it isn't* the computer increases the number of wrong guesses by one; *if it is* then the computer updates the ```word_with_guesses``` list and replaces underscores with the correct guessed letter
 
 4. the computer clears the screen and draws the gallows with the right picture, depending on how many wrong guesses the player has already had
 
-5. the computer prints the mystery word using underscores where the letters have not been guessed, and letters where the player has made correct guesses
+5. the computer prints the updated ```word_with_guesses``` list
 
-6. the computer prints the list of all the wrong guesses so far, if any
+6. to help the player, the computer also prints a list of any letters the player has guessed wrongly so far
 
-7. the computer asks the player to guess a letter ... back to item 1.
+   back to step 1 . the computer asks the player to guess a letter ... 
+
+The loop continues running until either the player has correctly guessed the word, or the player has run out of guesses and is hanged. So we also need to keep track of whether the player has won or lost.
+
+Firstly we will write the code for the player to make a single guess at a letter. Then we will make this code into a loop.
 
 ## We need some new variables
 
-We've mentioned a variable to hold the number of wrong guesses a couple of times, but, so far, we haven't made one. In the VARIABLES section of your code make a variable for the number of wrong guesses and set it to 0. (Choose your own name.)
+We've mentioned a variable to hold the number of wrong guesses a couple of times, but, so far, we haven't made one. In the *VARIABLES* block of your code make a variable for the number of wrong guesses and set it to 0. (Choose your own name.)
 
 In item 6 of the list above we get the computer to print out all the previous wrong guesses - we'll keep track of these in a *list*, which starts out as an empty list, and gets added to each time the player makes a wrong guess. Make a list variable and set it to ```[]```, which means it's an empty list.
 
