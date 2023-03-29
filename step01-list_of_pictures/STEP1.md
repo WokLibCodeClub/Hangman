@@ -50,7 +50,7 @@ which will print the first item from the ```pictures``` list. Change the number 
 
 How would you make a Python ***loop*** to show the pictures one after another without having to keep typing a different number in the square brackets?
 
-You will want your loop to start with ```for```, then a list variable, then ```in```, then your pictures list, then a ```:```. On the next lines, (which need to be indented) you should put the code which will
+You will want your loop to start with ```for```, then a list variable (which you can name as you like), then ```in```, then the name of your pictures list, then a ```:```. On the next lines, (which need to be indented) you should put the code which will
 
 * clear the screen
 * print the item from the list
