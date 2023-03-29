@@ -1,6 +1,6 @@
 # Choosing the word to guess
 
-In old-fashioned Hangman one player would choose a mystery word - which has to be a normal dictionary word, not anyone or anything's name and not slang and the other player would try to guess it.
+In old-fashioned Hangman one player would choose a mystery word - which has to be a normal dictionary word, not anyone or anything's name and not slang - and the other player would try to guess it.
 
 In the computer version the computer chooses the word and the player has to try and guess it.
 
@@ -58,15 +58,17 @@ word_to_guess = choice(wordlist)
 
 Put this after the lines to open the file and read the words into a list.
 
-## Giving away the word to guess
+## Giving away the mystery word
 
-Now we do something which seems a bit silly: we get the computer to display the mystery word. Add this line as the last line in the project:
+Now we do something which seems a bit silly: we get the computer to display the mystery word. Add this line *as the last line in the project*:
 
 ```python
-print(word_to_guess)
+print("\nMystery word: ", word_to_guess)
 ```
 
-This is obviously silly as the game is to try and guess this word. However, when we are writing and testing the code it will be very useful to know what the word is, to check if our code works properly. And when the code is all working we will delete this line.
+This is obviously silly, as the game is to try and guess this word. However, when we are writing and testing the code it will be very useful to know what the word is, to check if our code works properly. And when the code is all working we will delete this line.
+
+Note the text ```\n``` in the line above - this will print a blank line before displaying the word to guess.
 
 ## Displaying the mystery word during the game
 
@@ -74,13 +76,39 @@ As the player guesses letters which might be in the word the computer will displ
 
 ### Displaying the mystery word at the start of the game
 
-At the start of the game none of the letters have been guessed, so we need to display a word with underscore characters for each letter.
+At the start of the game none of the letters have been guessed, so we need to display the word with underscore characters for each letter.
 
-How many underscores? Well, this will be the number of letters in the word. We can 
+How many underscores? Well, this will be the number of letters in the mystery word. We can easily find this out because text strings in Python are a lot like lists, and you probably know that the function for counting the number of items in a list is ```len()```. We can use the same function for counting the number of letters in a text string.
 
-We've now got the computer to choose a word for us to try and guess. Next we want the computer to **display** the word, but instead of each of the letters in the word we want the computer to print an underscore character. But if we just printed a number of underscore characters one after another they would run together to make a single line, and we wouldn't be able to see how many letters there were in the word to guess. So we need to display the word with an underscore instead of every letter, **_and_** a space between each underscore. How can we do that?
+We will make a text variable to hold all the underscores, (and we will change the text in this variable as the player correctly guesses letters). If we want a text variable with, say,  eight underscores we can use multiplication! Yes, you can multiply text strings. The code ```'_' * 8``` would produce a text string with eight underscores. But we want to use the number of letters in the mystery word.
 
-(As the game progresses we need to update this display so that the correct guesses appear in the word in place of the uncerscores.)
+Add this line of code after the line which chooses the mystery word:
+
+```python
+word_with_guesses = '_' * len(word_to_guess)
+```
+
+which makes a text variable with one underscore for each letter in the mystery word.
+
+### Turning the word with guesses into a list
+
+It would be nice to display the underscores with a space between each, otherwise they would all run together and you wouldn't know how many letters there were. To do this we need to turn our text variable ```word_with_guesses``` into a **list** variable. There is a function to do this called ```list()```.
+
+Put this line of code after the previous line:
+
+```python
+word_with_guesses = list(word_with_guesses)
+```
+
+### Displaying the word with guesses with spaces
+
+Once we have our word with guesses as a list we can use a special list command for printing a list with spaces between each item. That command is ```' '.join()```. Now we can print our mystery word with underscores and spaces. Add this line at the end of the project just *before* the line where we give away the mystery word:
+
+print(' '.join(word_with_guesses))
+
+Run your code. Your display should look like this:
+
+
 
 ### How many letters are there in the word to guess?
 
