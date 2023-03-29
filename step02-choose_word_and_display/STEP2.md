@@ -1,14 +1,18 @@
 # Choosing the word to guess
 
-In the rules of Hangman one player selects a mystery word - which has to be a normal dictionary word, not anyone or anything's name and not slang.
+In old-fashioned Hangman one player would choose a mystery word - which has to be a normal dictionary word, not anyone or anything's name and not slang and the other player would try to guess it.
+
+In the computer version the computer chooses the word and the player has to try and guess it.
 
 In the starter project you will see a tab titled ```main.py```, and next to it another tab titled ```Hangman_words.txt```. This tab refers to a computer *file* which has been uploaded to the Trinket project. If you click on this tab you will see a list of 400 words, all in capital letters, which are from six to 10 letters long and fit the rules. We will have the computer select a word at random from this list as the mystery word to guess.
 
-There are three operations we need to code to do this
+To do this we need to write code to
 
-* open the file
-* read the words from the file into a Python list variable
-* select an word at random from the list as the mystery word
+* open the ```Hangman_words.txt``` file
+* read all 400 words from the file into a Python list
+* select a word at random from this list as the mystery word
+
+Each of these operations needs a single line of Python code.
 
 ## Opening the file
 
@@ -22,7 +26,7 @@ wordfile = open('Hangman_words.txt', 'r')
 
 ## Reading the words from the file into a Python list
 
-We need to make a **list** variable to hold the list of words. This example calls the variable ```wordlist``` but you can choose your own name if you like.
+We need to make a **list** variable to hold the list of words. In this example the list variable is called ```wordlist``` but you can choose your own name if you like.
 
 The code for reading the list of words from the file into the list variable looks a bit complicated! It is
 
@@ -32,11 +36,14 @@ wordlist = wordfile.read().splitlines()
 
 Put this line after the previous line.
 
-The middle part of this line is ```wordfile.read()``` which *reads* all the words from the file into Python storage, and the bit at the end ```.splitlines()``` means that whenever Python finds a new line in the file (which is for every new word) it puts the new line in a different list item. The beginning of this line ```wordlist = ``` simply creates a list variable called ```wordlist``` which will hold all the words as a list. You could add a line of code to *print* this list if you want to see what it looks like.
+The middle part of this line is ```wordfile.read()``` which *reads* all the words from the file into Python storage, and the bit at the end ```.splitlines()``` means Python puts each line in the file into a different list item.
+
+The beginning of this line ```wordlist =``` simply creates a list variable called ```wordlist``` which will hold all the words as a list. You could add a line of code to *print* this list if you want to see what it looks like.
 
 ## Choosing a word at random from the list
 
-This is the easiest of the three steps, because Python has a ready-made function for choosing an item at random from a list. The Python function is ```choice()``` where you put the name of the list variable inside the brackets. ```choice()``` is one of the functions contained in the ```random``` library, so if you want to use ```choice()``` in your code you have to **_import_** this library, which means at the top of your code you need to include the line
+This is the easiest of the three steps, because Python has a ready-made function for choosing an item at random from a list. The Python function is ```choice()``` where you put the name of the list variable inside the brackets. ```choice()``` is one of the functions contained in the ```random``` library, so if you want to use ```choice()``` in your code you have to ***import*** this library, which means at the top of your code you need to include the line
+
 ```python
 from random import choice
 ```
