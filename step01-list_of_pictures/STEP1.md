@@ -97,7 +97,7 @@ for p in pictures:
 
 <p>
 
-We don't actually need this loop for the game. It was just an excuse to see if you remembered how to make a ```for``` loop. So remove your loop, and go back to the original code which ends with this line not indented
+We don't actually need this loop for the game. It was just an excuse to see if you remembered how to make a ```for``` loop. So remove your loop, and go back to the original code which ends with this line *not indented*
   
 ```python
 print(pictures[0])
