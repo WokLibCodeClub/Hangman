@@ -44,7 +44,7 @@ Once you've finished making your list you should check that your sequence of pic
 print(pictures[0])
 ```
 
-which will print the first item from the ```pictures``` list. Change the number in square brackets to see the other items in your list.
+which will print the first item from the ```pictures``` list. Run your code - it should display the first picture in the list. Change the number in square brackets and run the code again to see the other items in your list.
 
 ## Challenge
 
