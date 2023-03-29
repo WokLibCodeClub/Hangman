@@ -18,7 +18,7 @@ One smart way to add a new picture is to copy the previous picture in the list, 
 
 ---
 
-## Triple quotes as a way of making a Python string go over several lines
+### Triple quotes as a way of making a Python string go over several lines
 
 >Each of the items in a list in the starter project is a *text string*, but you might have noticed that these text strings don't begin and end with `'` or `"` like normal text strings, they begin and end with `"""` - a triple quote mark. What is the meaning of a triple quote mark?
 >
@@ -68,7 +68,7 @@ which means the programme will wait until you press the Enter key (but see the n
 
 ---
 
-## Typing in the Result (right hand) panel
+### Typing in the Result (right hand) panel
 
 >When your Python code includes an ```input()``` function the code will expect you to type something in the right hand Result panel of the trinket webpage.
 >
