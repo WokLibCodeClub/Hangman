@@ -42,20 +42,41 @@ The beginning of this line ```wordlist =``` simply creates a list variable calle
 
 ## Choosing a word at random from the list
 
-This is the easiest of the three steps, because Python has a ready-made function for choosing an item at random from a list. The Python function is ```choice()``` where you put the name of the list variable inside the brackets. ```choice()``` is one of the functions contained in the ```random``` library, so if you want to use ```choice()``` in your code you have to ***import*** this library, which means at the top of your code you need to include the line
+Python has a ready-made function for choosing an item at random from a list. The Python function is ```choice()``` where you put the name of the list variable inside the brackets. ```choice()``` is one of the functions contained in the ```random``` library, so if you want to use ```choice()``` in your code you have to ***import*** this library, which means at the top of your code you need to include the line
 
 ```python
 from random import choice
 ```
+
 (this should already be in the starter project). 
 
-We will make another variable to hold the random choice, called ```word_to_guess``` in this example. You can choose a different name if you want. Here is the line of code, which will go after the previous two lines:
+We will make a variable to hold the random choice, called ```word_to_guess``` in this example. You can choose a different name if you want. Here is the code:
 
 ```python
 word_to_guess = choice(wordlist)
 ```
 
-## Displaying the word to guess
+Put this after the lines to open the file and read the words into a list.
+
+## Giving away the word to guess
+
+Now we do something which seems a bit silly: we get the computer to display the mystery word. Add this line as the last line in the project:
+
+```python
+print(word_to_guess)
+```
+
+This is obviously silly as the game is to try and guess this word. However, when we are writing and testing the code it will be very useful to know what the word is, to check if our code works properly. And when the code is all working we will delete this line.
+
+## Displaying the mystery word during the game
+
+As the player guesses letters which might be in the word the computer will display the mystery word with any correctly guessed letters in their correct places, and underscores for letters which haven't been guessed. We need to find a way to write code to do this. 
+
+### Displaying the mystery word at the start of the game
+
+At the start of the game none of the letters have been guessed, so we need to display a word with underscore characters for each letter.
+
+How many underscores? Well, this will be the number of letters in the word. We can 
 
 We've now got the computer to choose a word for us to try and guess. Next we want the computer to **display** the word, but instead of each of the letters in the word we want the computer to print an underscore character. But if we just printed a number of underscore characters one after another they would run together to make a single line, and we wouldn't be able to see how many letters there were in the word to guess. So we need to display the word with an underscore instead of every letter, **_and_** a space between each underscore. How can we do that?
 
