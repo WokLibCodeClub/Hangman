@@ -18,7 +18,7 @@ Each of these operations needs a single line of Python code.
 
 In Python we often write code where we need to access some information from another file on the computer, or even a file on the worldwide web. If the file just contains text characters we use the Python function ```open()```, and inside the brackets we put the name of the file, (which must be inside single or double quotes), then a comma,  then the *"mode"* of opening, which means whether we tell Python if we want to read data from the file (mode ```'r'```), or  start writing in a completely new file (mode ```'w'```), or add more data on to the end of an existing file (mode ```'a'```).
 
-We usually link the opened file to a variable which is a *file* type of variable. Because we only want to read the data from the word list we will use the ```r``` mode. Here is the code for opening the file with a file variable called ```wordfile```. Put this line after the end of the ```pictures``` list:
+We usually link the opened file to a variable which is a *file* type of variable. Because we only want to read from and not write to the file we will use the ```r``` mode. Here is the code for opening the file with a file variable called ```wordfile```. Put this line after the end of the ```pictures``` list in the *VARIABLES* block of the project:
 
 ```python
 wordfile = open('Hangman_words.txt', 'r')
@@ -60,7 +60,7 @@ Put this after the lines to open the file and read the words into a list.
 
 ## Giving away the mystery word
 
-Now we do something which seems a bit silly: we get the computer to display the mystery word. Add this line *as the last line in the project*:
+Now we do something which seems a bit silly: we get the computer to display the mystery word. Add this line *as the last line in the project* in the *MAIN CODE* block of the project:
 
 ```python
 print("\nMystery word: ", word_to_guess)
@@ -72,7 +72,7 @@ Note the text ```\n``` in the line above - this will print a blank line before d
 
 ## Displaying the mystery word during the game
 
-As the player guesses letters which might be in the word the computer will display the mystery word with any correctly guessed letters in their correct places, and underscores for letters which haven't been guessed. We need to find a way to write code to do this. 
+As the player guesses letters which might be in the word the computer will display the mystery word with any correctly guessed letters in their correct places, and underscores for letters which haven't been guessed. We need to find a way to write code to do this.
 
 ### Displaying the mystery word at the start of the game
 
@@ -82,7 +82,7 @@ How many underscores? Well, this will be the number of letters in the mystery wo
 
 We will make a text variable to hold all the underscores, (and we will change the text in this variable as the player correctly guesses letters). If we want a text variable with, say,  eight underscores we can use multiplication! Yes, you can multiply text strings. The code ```'_' * 8``` would produce a text string with eight underscores. But we want to use the number of letters in the mystery word.
 
-Add this line of code after the line which chooses the mystery word:
+Add this line of code after the line which chooses the mystery word in the *VARIABLES* block of the project:
 
 ```python
 word_with_guesses = '_' * len(word_to_guess)
@@ -102,46 +102,17 @@ word_with_guesses = list(word_with_guesses)
 
 ### Displaying the word with guesses with spaces
 
-Once we have our word with guesses as a list we can use a special list command for printing a list with spaces between each item. That command is ```' '.join()```. Now we can print our mystery word with underscores and spaces. Add this line at the end of the project just *before* the line where we give away the mystery word:
+Once we have our word with guesses as a list we can use a special list command for printing a list with spaces between each item. That command is ```' '.join()```. Now we can print our mystery word with underscores and spaces. Add this line at the end of the project in the *MAIN CODE* block just *before* the line where we give away the mystery word:
 
+```python
 print(' '.join(word_with_guesses))
+```
 
-Run your code. Your display should look like this:
+Run your code. Your display should look something like this:
 
+![Step 2 display](step2.png "Display so far")
 
-
-### How many letters are there in the word to guess?
-
-First let's count how many letters there are in the word we have to guess. We can do this easily because text strings in Python are a lot like lists, and you probably know that the function for counting the number of items in a list is ```len()```. We can use the same function for counting the number of letters in a text string.
-
-### Multiplication with text strings
-
-**_What!!!!???_** Why would you want to do multiplication with text strings?
-
-In fact you can use multiplication to create copies of a text string. If I had a text string ```"abc"``` and I multiplied it by three ```"abc" * 3``` the result would be a text string ```"abcabcabc"```. Here's how we can use this: we need a variable to contain the display with underscores; we need to count how many letters in the original word; then we make the word display variable equal to ```"_"``` (underscore character) multiplied by the number of letters in the original word.
-
-### Turning a text string into a list
-
-Our display text string now contains an underscore instead of each letter in the original word, and as the player makes successful guesses we would like to update this text string, replacing the underscores with the correctly guessed letters.
-
-Unfortunately you can't easily just replace one character in a text string in Python. What you *can* do is convert the text string to a list, where each letter becomes a new item in the list, then you can change individual items as you like. If I have a string variable ```textstring``` and I want to convert it into a list variable ```textlist``` then I would use the code ```textlist = list(textstring)```.
-
-### Printing a list with a space between each item
-
-There is a special Python function called ```join()``` which lets you print a list with a text character between each item. If I want to print my list ```textlist``` with a *space* between each item I would use the code ```print(' '.join(textlist))```. Note the item in quotes before the word ```join``` - this shows the character we want to use to put in between each item in the list, which is a space in this example. If I wanted an asterisk between each item I could use ```print('*'.join(textlist))```
-
-# Challenge
-
-Put all the ideas in the previous paragraphs together to write three lines of code. The first two lines go at the end of the VARIABLES section, after the code to choose the word to guess. The third line goes at the end of the code, after the line ```print(pictures[0])```. Your lines of code should
-
-* make a text variable which consists of the same number of underscores as there are letters in the original word. You will need the ```len()``` function and multiplication
-* turn the text variable from a text string into a list (you can use the same variable name for both if you want)
-* print the variable with a space between each character
-
-Save your code and test it. Did it work?
-
-[Here](./STEP2A.md) is one way to do it.
-
+(except, of course, your mystery word will probably be something else, and the number of underscores will also be different).
 
 [Go to Step 3 - Guessing a letter](../step03-guessing_a_letter/STEP3.md)
 
