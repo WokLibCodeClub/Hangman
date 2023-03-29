@@ -145,3 +145,4 @@ Save your code and test it. Did it work?
 
 [Go to Step 3 - Guessing a letter](../step03-guessing_a_letter/STEP3.md)
 
+[Go back to previous page](../step01-list_of_pictures/STEP1.md)
