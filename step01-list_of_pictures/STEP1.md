@@ -16,13 +16,17 @@ Your first task is to add five more pictures to the pictures list: first add the
 
 One smart way to add a new picture is to copy the previous picture in the list, paste it onto the end of the list (**don't forget to put in a comma first**) then edit in a new body part to the pasted version.
 
-## Triple quotes as a way of making a Python string which goes over several lines
+---
 
-Each of the items in a list in the starter project is a *text string*, but you might have noticed that these text strings don't begin and end with `'` or `"` like normal text strings, they begin and end with `"""` - a triple quote mark. What is the meaning of a triple quote mark?
+## Triple quotes as a way of making a Python string go over several lines
 
-You can see an explanation of this near the end of the introductory video [(link to video)](https://youtu.be/FOJO9RdFEF8) for this project, but the simple explanation is that a text string which is inside *triple* quotes can spread across several lines, so any time you want your string to start a new line you type ENTER inside the triple quotes, and this will be shown as a new line when Python prints the text.
+>Each of the items in a list in the starter project is a *text string*, but you might have noticed that these text strings don't begin and end with `'` or `"` like normal text strings, they begin and end with `"""` - a triple quote mark. What is the meaning of a triple quote mark?
+>
+>You can see an explanation of this near the end of the introductory video [(link to video)](https://youtu.be/FOJO9RdFEF8) for this project, but the simple explanation is that a text string which is inside *triple* quotes can spread across several lines, so any time you want your string to start a new line you type ENTER inside the triple quotes, and this will be shown as a new line when Python prints the text.
+>
+>You can use either triple single quotes ```'''``` or triple double-quotes ```"""``` to get this effect.
 
-You can use either triple single quotes ```'''``` or triple double-quotes ```"""``` to get this effect.
+---
 
 ## Special feature of the ```\``` character
 
