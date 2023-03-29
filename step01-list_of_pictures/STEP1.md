@@ -107,4 +107,4 @@ which will print the first item in the pictures list, for when we are ready to s
   
 [Go to Step 2 - Choosing and displaying the mystery word](../step02-choose_word_and_display/STEP2.md)
 
-[Go back to previous page](../README.md)
+[Go back to front page](../README.md)
