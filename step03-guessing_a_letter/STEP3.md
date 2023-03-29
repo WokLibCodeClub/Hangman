@@ -22,40 +22,15 @@ This is the overall sequence of our loop:
 
 The loop continues running until either the player has correctly guessed the word, or the player has run out of guesses and is hanged. So we also need to keep track of whether the player has won or lost.
 
-Firstly we will write the code for the player to make a single guess at a letter. Then we will make this code into a loop.
+Firstly, we will write the code for the player to make a single guess at a letter. Then, in Step 4, we will make this code into a loop.
 
 ## We need some new variables
 
-We've mentioned a variable to hold the number of wrong guesses a couple of times, but, so far, we haven't made one. In the *VARIABLES* block of your code make a variable for the number of wrong guesses and set it to 0. (Choose your own name.)
+We've mentioned a variable to hold the number of wrong guesses a couple of times, but, so far, we haven't made one. In the *VARIABLES* block of your code make a variable for the number of wrong guesses and set it to 0. I called mine ```num_wrong_guesses``` but you can choose your own name.
 
-In item 6 of the list above we get the computer to print out all the previous wrong guesses - we'll keep track of these in a *list*, which starts out as an empty list, and gets added to each time the player makes a wrong guess. Make a list variable and set it to ```[]```, which means it's an empty list.
+In item 6 of the list above we get the computer to print out all the previous wrong letters - we'll keep track of these in another Python *list*. At the beginning this an empty list, so add another line, below the previous one, where you create a list variable (I called mine ```wrong_guesses_list```) and set it to ```[]```, which means it's an empty list.
 
-## Your code so far
-
-Here's a sketch of what your code should look like:
-
-In the VARIABLES section you should have
-
-* a list variable containing a series of pictures for the gallows
-* code to open the word list file, select a word at random and put this in a variable
-* code to make a list variable to contain the partially guessed mystery word  - at the moment this will consist entirely of underscores
-* a variable to hold the number of wrong guesses, initially set to 0
-* an empty list variable to hold all the wrong guessed letters
-
-In the MAIN CODE section you should have
-
-* a line to print the first picture in the list of pictures
-* a line to print the list containing the partially guessed mystery word, using the function ```join()``` to put a space between each character.
-
-### Useful extra step for debugging
-
-*Debugging* is the rather odd computer name for finding all the "bugs" in your code - these are bits of your code that stop it from running properly - they might be simply typos (which are usually easy to find) or more tricky bugs where a programme might run but not be doing exactly what you want.
-
-When we're running our finished version of Hangman the computer will not reveal the mystery word until the very end. But while we're writing the code and making sure it's working properly it would be very useful if we know what the mystery word is. So, a good suggestion is to add a line of code at the bottom to print the mystery word. You should be able to work out this line for yourself.
-
-When our code is all written and running properly we will put the comment sign ```#``` in front of this line so the computer will not display the word.
-
-## Asking the player to choose a letter
+## Using ```input()``` to get the player to choose a letter
 
 You probably know the Python function ```input()``` to ask the user to type in something. We will use this to ask the player to guess a letter. You will need to put a *prompt* string inside the brackets (some text which Python will print when asking for input - don't forget to put the prompt in quotes) and you will also need a variable to put the guess in.
 
@@ -109,9 +84,11 @@ Inside the loop we want to check each letter in the mystery word against the pla
 As we go through the ```for``` loop the value of loop_variable increases, starting from 0, and we can look at the letters in the mystery word in turn, using this variable as the **index**, and seeing if that letter is equal to the player's guess.
 
 If the variable for the loop is called ```l``` and the player's guess variable is ```a``` and the mystery word is in a variable called ```word_to_guess``` then the code I need is an ```if``` statement (which must be indented as it is inside the ```for``` loop) like this:
+
 ```python
   if word_to_guess[l] == a:
 ```
+
 This is comparing the player's guess with a letter in the mystery word. *If they are equal* we need to do two things
 
 - first, change the Boolean variable ```good_guess``` to be True (this line has to be indented *twice* as it is in the ```for``` loop *and* the ```if``` block),
