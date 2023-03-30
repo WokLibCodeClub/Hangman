@@ -111,7 +111,7 @@ print(' '.join(word_with_guesses))
 Now we do something which seems a bit silly: we get the computer to display the mystery word. Add this line in the *MAIN CODE* block of the project *after* the line which prints ```pictures[0]``` and before the line with the ```join()``` command:
 
 ```python
-print("\nMystery word: ", word_to_guess)
+print('Mystery word: ', word_to_guess, '\n')
 ```
 
 This is obviously silly, as the game is about trying to guess this word. However, when we are writing and testing the code it will be very useful to know what the word is, to check if our code works properly. And when the code is all working we will delete this line.
