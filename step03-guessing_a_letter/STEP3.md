@@ -68,7 +68,7 @@ which will convert anything the player types into upper case.
 
 >#### Experimenting with ```upper()```
 >
->You experiment with ```upper()``` in the [trinket Interactive Python Console](https://trinket.io/console). Open the console and type
+>You can experiment with ```upper()``` in the [trinket Interactive Python Console](https://trinket.io/console). Open the console and type
 >
 >```python
 >"Hello".upper()
