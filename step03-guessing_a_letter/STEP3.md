@@ -68,7 +68,7 @@ which will convert anything the player types into upper case.
 
 >#### Experimenting with ```upper()```
 >
->You can try this out in the [trinket Interactive Python Console](https://trinket.io/console). Open the console and type
+>You experiment with ```upper()``` in the [trinket Interactive Python Console](https://trinket.io/console). Open the console and type
 >
 >```python
 >"Hello".upper()
@@ -76,7 +76,7 @@ which will convert anything the player types into upper case.
 >
 >The console will print ```HELLO``` because Python has taken every character in the string ```"Hello"``` and converted it to an upper case letter. The "H", which was already upper case, is not changed. If you have a variable which contains text you can put the name of the variable in place of "Hello" in this function.
 >
->(As you might guess there is also a Python function ```lower()``` which you can experiment with to find out what it does.)
+>(As you might guess there is also a Python function ```lower()```. Experiment with it to find out what it does.)
 
 ---
 
