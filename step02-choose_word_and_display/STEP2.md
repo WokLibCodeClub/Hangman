@@ -8,9 +8,9 @@ In the starter project, on the left side, you will see two tabs, one labelled ``
 
 To do this we need to write code to
 
-* open the ```Hangman_words.txt``` file
-* read all 400 words from the file into a Python list
-* select a word at random from this list as the mystery word
+1. open the ```Hangman_words.txt``` file
+2. read all 400 words from the file into a Python list
+3. select a word at random from this list as the mystery word
 
 Each of these operations needs a single line of Python code. Put these lines in the *VARIABLES* block of code after the end of the ```pictures``` list.
 
