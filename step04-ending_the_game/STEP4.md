@@ -32,7 +32,7 @@ We need to write code which will work out if the player has won or lost, to know
 
 ### Working out if the player has lost
 
-If the player has *lost* then the body hanging on the gallows is complete. How many wrong guesses does this take? We could test the variable which holds the number of wrong guesses to find out if the player has lost using:
+If the player has *lost* then the body hanging on the gallows is complete. How many wrong guesses does this take? We could test the variable which holds the number of wrong guesses to find out if the player has lost:
 
 ```python
   if num_wrong_guesses == ?:
@@ -41,9 +41,17 @@ If the player has *lost* then the body hanging on the gallows is complete. How m
 
 In place of the question mark put the number of wrong guesses for when the player has lost. (Also, if you used a different variable name then use your name in place of mine.)
 
+This line will cause the code to break out of the forever loop and go on to any code which comes after the loop. (At the moment, there isn't any, but we'll fix that soon.)
+
 ### Working out if the player has won
 
-If the player has *won* then all the letters have been guessed. In this case there will be no more underscore characters in the list variable we were using to display the mystery word. Python has a very neat way of checking if a particular item is present in a list. To check if the text "_" is present in the list we could use
+If the player has *won* then all the letters in the mystery word have been guessed. In this case there will be no more underscore characters in the list variable we were using to hold the mixture of underscores and letters. 
+
+How can Python tell if a particular item is present in a list?
+
+
+
+To check if the text "_" is present in the list we could use
 
 ```python
   if "_" in ?:
@@ -51,10 +59,12 @@ If the player has *won* then all the letters have been guessed. In this case the
 ```
 
 (substitute the name of your list variable). This code will break out of the loop if there is a "\_" character anywhere in the list, **but that's not what we want!** We actually want to test if the "_" character is *absent* from the list, so in Python we can do this by adding in the word ```not```:
+
 ```python
-if "_" not in name_of_list_variable:
+if ? not in ?:
   break
 ```
+
 and this will now jump out of the loop if the player has won.
 
 We have two ```if``` blocks to add to the end of the ```while True``` loop, but Python actually gives a way to test **_both_** conditions with the one ```if``` block using the key word ```or```:
@@ -73,25 +83,29 @@ We're nearly there.
 At the end of the code, *outside* the ```while True:``` loop (so not indented), we put code either to congratulate the player for being clever, or tell them they've lost, and let them know what the mystery word was.
 
 Our code will only ever get to these lines after the game has been won or lost but which is it? We can use the same tests we used inside the forever loop.
+
 ```python
 if wrong_guesses_variable == losing number: # this means the player has lost
   [WRITE CODE TO SAY THE PLAYER HAS LOST AND TO TELL THEM WHAT THE MYSTERY WORD WAS]
 else: # this means the player has won
   [WRITE CODE TO GIVE A MESSAGE OF CONGRATULATIONS]
 ```
+
 Test your code again. If it's all working the programme will let you know if you've won or lost. 
 
-For the last step you should now locate the line of code you added for debugging (which displayed the mystery word at the beginning of the game) and add a ```#``` character at the beginning to turn it into a comment. Python will now ignore this line and not print the mystery word before it's been guessed. (Or you could just delete this line.)
+## Get rid of the line that gives away the mystery word
 
-You have now coded Hangman! Well done. See if you can beat your own game.
+Finally, before you let your friends have a go at your new game, you should locate the line of code which displays the mystery word. Either delete this line, or add a ```#``` character at the beginning to turn it into a comment so that Python will ignore this line and not print the mystery word before it's been guessed.
 
-# Challenges
+You have now coded Hangman! Well done. See if you can beat the computer in your own game.
 
-There are some extras you could put in to your game:
+## Challenges
 
-1. This code doesn't check if the player accidentally types more than one letter during a guess, so one improvement would be to test this and warn the player if they type more than one character
+There are some modifications you could put in to your game:
 
-2. If you play your game many times you might wonder if you are winning more than the computer. You could add code to keep the score and display it at the end of each game
+1. This code doesn't check if the player accidentally types more than one letter during a guess, so one modification would be to test this and warn the player if they type more than one character. How could you do that?
+
+2. If you play your game many times you might wonder whether you are winning more or less often than the computer. You could add code to keep the score and display it at the end of each game.
 
 3. If you play so often that you start to see the same mystery words coming up over and over again you might want to find a longer list of words. You can search for lists of English words on the internet. If you find a good list you will have to convert all the words to capital letters (you could write Python code to do this) then upload your improved word list to your trinket project.
 
