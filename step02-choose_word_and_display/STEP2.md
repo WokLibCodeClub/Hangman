@@ -12,7 +12,7 @@ To do this we need to write code to
 * read all 400 words from the file into a Python list
 * select a word at random from this list as the mystery word
 
-Each of these operations needs a single line of Python code. Put these lines in the *VARIABLES* block of code.
+Each of these operations needs a single line of Python code. Put these lines in the *VARIABLES* block of code after the end of the ```pictures``` list.
 
 ## Opening the file
 
