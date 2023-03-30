@@ -106,7 +106,7 @@ for ? in range(?):
 
 You need to fill in the question marks. The first question mark is the name of a *loop variable* where you can choose any variable name which fits the Python rules for variable names. The second question mark needs to be the number of letters in the mystery word. *Clue*: look back to [Step 2: Displaying the mystery word at the start of the game](../step02-choose_word_and_display/STEP2.md#displaying-the-mystery-word-at-the-start-of-the-game) to see how to use the number of letters in the mystery word.
 
-This line will take your loop variable and set it to 0 the first time the loop runs; 1 the second time the loop runs; 2 the next time etc up to one less than the number of letters in the mystery word.
+This line will take your loop variable and set it to 0 the first time the loop runs, 1 the second time the loop runs, 2 the third time etc up to one less than the number of letters in the mystery word.
 
 ---
 
@@ -128,15 +128,13 @@ This line will take your loop variable and set it to 0 the first time the loop r
 
 ---
 
-Inside the loop we want to compare each letter in the mystery word with the player's guess. We can use the fact that in Python a piece of text, for example a word, behaves a lot like a list: if I have a text variable ```myword = "GENIUS"``` then I can check what the 3rd letter is with the code ```myword[2]```, just as if the letters were items in a list.
-
-As we go through the ```for``` loop the value of loop_variable increases, starting from 0, and we can look at the letters in the mystery word in turn, using this variable as the **index**, and seeing if that letter is equal to the player's guess.
-
-If the variable for the loop is called ```l``` and the player's guess variable is ```a``` and the mystery word is in a variable called ```word_to_guess``` then the code I need is an ```if``` statement (which must be indented as it is inside the ```for``` loop) like this:
+Inside the ```for``` loop, (which means this line *must* be indented) we compare the player's guess (which I have in a variable called ```a```) with the letter in the mystery word which corresponds to the loop variable. We do this using a Python ```if``` statement:
 
 ```python
-  if word_to_guess[l] == a:
+  if word_to_guess[?] == a:
 ```
+
+In place of the question mark put the name of your loop variable. In Python if we want to check if two things are equal we use a *double equals sign*: ```==```.
 
 This is comparing the player's guess with a letter in the mystery word. *If they are equal* we need to do two things
 
