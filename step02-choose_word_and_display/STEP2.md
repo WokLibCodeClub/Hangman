@@ -82,7 +82,7 @@ How many underscores? Well, this will be the number of letters in the mystery wo
 
 We will make a text variable to hold all the underscores, (and we will change the text in this variable as the player correctly guesses letters). If we want a text variable with, say,  eight underscores we can use multiplication! Yes, you can multiply text strings. The code ```'_' * 8``` would produce a text string with eight underscores. But we want to use the number of letters in the mystery word.
 
-Add this line of code after the line which chooses the mystery word in the *VARIABLES* block of the project:
+Add this line of code in the *VARIABLES* block of the project after the line which makes the ```word_to_guess``` variable:
 
 ```python
 word_with_guesses = '_' * len(word_to_guess)
