@@ -65,7 +65,7 @@ How can Python tell if a particular item is present in a list?
 >
 >it would print ```False``` because ```'b'``` is not in the list.
 >
->Now set up a list variable like we might have in Hangman:
+>Now set up a list variable like we might have in Hangman if some, but not all, of the letters had been guessed:
 >
 >```python
 >word_with_guesses = ['a', '_', '_', 'l', '_']
