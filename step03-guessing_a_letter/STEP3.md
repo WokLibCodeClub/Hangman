@@ -46,6 +46,8 @@ a = input(?)
 
 where you need to put your own prompt string (inside quotes) in place of the question mark. ```a``` is my variable name for the answer.
 
+**Suggestion**: to space your game out a bit one idea is to put the characters ```\n``` at the start of your prompt string. This will print a blank line before the text asking the player for a letter.
+
 >### Recommendation
 >
 >Put a **comment** line above the ```input()``` line to mark that this is where the code for the player's guess begins. You will need to find this place later. (A comment line begins with the ```#``` character.)
