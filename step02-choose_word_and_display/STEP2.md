@@ -102,7 +102,9 @@ word_with_guesses = list(word_with_guesses)
 
 ### Displaying the word with guesses with spaces
 
-Once we have our word with guesses as a list we can use a special list command for printing a list with spaces between each item. That command is ```' '.join()```. Now we can print our mystery word with underscores and spaces. Add this line at the end of the project in the *MAIN CODE* block just *before* the line where we give away the mystery word:
+Once we have our word with guesses as a list we can use a special list command for printing a list with spaces between each item. That command is ```' '.join()```. Now we can print our mystery word with underscores and spaces. 
+
+Add this line in the *MAIN CODE* block just *before* the line where we give away the mystery word:
 
 ```python
 print(' '.join(word_with_guesses))
