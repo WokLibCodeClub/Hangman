@@ -47,7 +47,7 @@ a = input(?)
 where you need to put your own prompt string in place of the question mark. ```a``` is my variable name for the answer.
 
 >### Recommendation
-
+>
 >Put a **comment** line above the ```input()``` line to mark that this is where the code for the player's guess begins. You will need to find this place later. (A comment line begins with the ```#``` character.)
 
 ### Upper case or lower case?
@@ -80,13 +80,7 @@ which will convert anything the player types into upper case.
 
 ---
 
-In the Hangman code if your input function has put the player's guess into a variable called ```a``` then add, after the input line,
-```python
-a = a.upper()
-```
-which will take the text in variable ```a```, convert it to upper case and put the result back in ```a```. (Use your own variable name in place of ```a```.) So, whether the player typed a capital or a lower case letter we can write the code as if it was a capital letter.
-
-### Unfair to the player!
+### Unfair to the player
 
 Next, we're going to be a bit unfair to the player - and assume that the player's guess is *wrong*. We'll make a **_Boolean_** variable (one which can be ```True``` or ```False```) and add it to the bottom of the code, like this:
 ```
