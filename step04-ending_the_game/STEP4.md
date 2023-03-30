@@ -35,8 +35,8 @@ We need to write code which will work out if the player has won or lost, to know
 If the player has *lost* then the body hanging on the gallows is complete. How many wrong guesses does this take? We could test the variable which holds the number of wrong guesses to find out if the player has lost using:
 
 ```python
-if num_wrong_guesses == ?:
-  break
+  if num_wrong_guesses == ?:
+    break
 ```
 
 In place of the question mark put the number of wrong guesses for when the player has lost. (Also, if you used a different variable name then use your name in place of mine.)
@@ -46,8 +46,8 @@ In place of the question mark put the number of wrong guesses for when the playe
 If the player has *won* then all the letters have been guessed. In this case there will be no more underscore characters in the list variable we were using to display the mystery word. Python has a very neat way of checking if a particular item is present in a list. To check if the text "_" is present in the list we could use
 
 ```python
-if "_" in ?:
-  break
+  if "_" in ?:
+    break
 ```
 
 (substitute the name of your list variable). This code will break out of the loop if there is a "\_" character anywhere in the list, **but that's not what we want!** We actually want to test if the "_" character is *absent* from the list, so in Python we can do this by adding in the word ```not```:
