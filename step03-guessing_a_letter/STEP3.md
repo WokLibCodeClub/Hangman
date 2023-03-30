@@ -52,15 +52,25 @@ where you need to put your own prompt string in place of the question mark. ```a
 
 ### Upper case or lower case?
 
-All the words in the word list are all in upper case (capital) letters, and Python is very fussy about upper case or lower case letters. If the player guesses the letter "a", and the word is "HANGMAN", Python will say there is no "a" in "HANGMAN". We can insists that the player only types capital letters when guessing, but another way is to *convert* any letter the player types into capitals, which avoids the problem. The Python function ```upper()``` is used to convert text to upper case letters.
+The words in the ```Hangman_words.txt``` file are all in upper case (capital) letters, but the player might type in a lower case ```'a'```. Python is very fussy about upper case and lower case letters. If the player guesses the letter "a", and the word is "HANGMAN", Python will say there is no "a" in "HANGMAN".
 
-You can try this out in the [trinket Interactive Python Console](https://trinket.io/console). Open the console and type
-```python
-"Hello".upper()
-```
-The console will print ```HELLO``` because Python has taken every character in the string ```"Hello"``` and converted it to an upper case letter. The "H", which was already upper case, is not changed. If you have a variable which contains text you can put the name of the variable in place of "Hello" in this function.
+We can insists that the player only types capital letters when making guesses, but another way is to *convert* any letter the player types into upper case, which avoids the problem. The Python function ```upper()``` is used to convert text to upper case letters.
 
-(As you might guess there is also a Python function ```lower()``` which you can experiment with to find out what it does.)
+---
+
+>#### Experimenting with ```upper()```
+>
+>You can try this out in the [trinket Interactive Python Console](https://trinket.io/console). Open the console and type
+>
+>```python
+>"Hello".upper()
+>```
+>
+>The console will print ```HELLO``` because Python has taken every character in the string ```"Hello"``` and converted it to an upper case letter. The "H", which was already upper case, is not changed. If you have a variable which contains text you can put the name of the variable in place of "Hello" in this function.
+>
+>(As you might guess there is also a Python function ```lower()``` which you can experiment with to find out what it does.)
+
+---
 
 In the Hangman code if your input function has put the player's guess into a variable called ```a``` then add, after the input line,
 ```python
