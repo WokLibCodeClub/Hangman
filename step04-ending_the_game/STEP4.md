@@ -2,7 +2,7 @@
 
 We're now going to put all the code for the player's guess inside a loop so the player can keep on guessing letters.
 
-We will use a Python forever loop, except it won't go on forever because we will add in a bit of clever code which lets us ***jump out*** of the loop. This will happen if the player has either won or lost the game.
+We will use a Python ***forever*** loop, except it won't go on forever because we will add in a bit of clever code which lets us ***jump out*** of the loop. This will happen if the player has either won or lost the game.
 
 As you will see, the key Python word to jump out of a loop is ```break```.
 
@@ -14,11 +14,11 @@ A Python forever loop begins with the code
 while True:
 ```
 
-then all the lines of code which we want to be *inside* the forever loop have to be indented.
+then all the lines of code which we want to be *inside* the forever loop have to be **indented**.
 
-Insert this line of code just before the line which includes the ```input()``` function.
+Insert the ```while True:``` line of code just before the line which includes the ```input()``` function.
 
-If you followed the suggestion to put a comment in your code at the start of the section dealing with the player's guess then you will quickly be able to find this point. 
+If you followed the suggestion to put a comment in your code at the start of the section dealing with the player's guess then you will quickly be able to find this place.
 
 Everything from here to the end of the code needs to be **indented**. Note, some lines are already indented - for these lines we need to add a further indentation.
 
@@ -90,7 +90,7 @@ How can Python tell if a particular item is present in a list?
 >
 > This will print ```True``` telling us that there are no underscores in the list.
 
-Our code to break out of the forever loop if the player has won will be something like
+Our code to break out of the forever loop if the player has won will use a Python ```if``` statement, and be something like
 
 ```python
   if "_" not in word_with_guesses:
@@ -107,7 +107,7 @@ We're nearly there.
 
 At the end of the code, *outside* the ```while True:``` loop (so not indented), we put code either to congratulate the player for being clever, or tell them they've lost, and let them know what the mystery word was.
 
-Our code will only ever get to these lines after the game has been won or lost but which is it? We can use the same test for a loss that we used inside the forever loop, then we know if the player didn't lose they must have won!
+Our code will only ever get to these lines after the game has been won or lost but which is it? We can use the same test for a the player losing (with an ```if``` statement) that we used inside the forever loop, but now we can also add an ```else:``` statement, because we know if the player didn't lose they must have won! Here is a sketch of the code to put at the very end of the project (not indented):
 
 ```python
 if num_wrong_guesses == ?: # this means the player has lost
@@ -122,7 +122,7 @@ Test your code again. If it's all working the programme will now let you know if
 
 ## Get rid of the line that gives away the mystery word
 
-Finally, before you let your friends have a go at your new game, you should locate the *two* places where there is a line of code which displays the mystery word. Either delete these lines, or add a ```#``` character at the beginning of each to turn them into comments so that Python will ignore these lines and not print the mystery word before it's been guessed.
+Finally, before you let your friends have a go at your new game, you should locate the *two* places where there is a line of code which displays the mystery word. Either delete these lines, or add a ```#``` character at the beginning of each to turn them into comments so that Python will ignore these lines and not print the mystery word and spoil the game.
 
 You have now coded Hangman! Well done. See if you can beat the computer in your own game.
 
