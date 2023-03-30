@@ -173,7 +173,7 @@ Once the ```for``` loop has finished it means we have checked the player's guess
 Well, if the player's guess matched a letter in the word our ```if``` block will have set this variable to ```True```, meaning it was a good guess. But if there were no matches in the mystery word, then this variable will still be set to ```False```, and that tells us it was a bad guess. If it's a bad guess we do two things:
 
 1. add one to the number of wrong guesses, and
-2. add the player's guess to the list of wrong guesses.
+2. add the player's guessed letter to the list of wrong guesses.
 
 So *after* the ```for``` loop we can put in another ```if``` block to check the setting of ```good_guess```. This block is *not* part of the ```for``` loop, so this line is *not* indented at all:
 
