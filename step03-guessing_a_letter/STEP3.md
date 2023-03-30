@@ -100,13 +100,13 @@ Once the player has guessed a letter we need to go through every letter in the m
 
 ### ```for``` loop to cycle through the mystery word
 
-Here is the structure of the first line of the ```for``` loop:
+Here is the structure of the first line of the ```for``` loop (which goes after the line setting the boolean variable to ```False```):
 
 ```python
 for ? in range(?):
 ```
 
-You need to fill in the question marks. The first question mark is the name of a *loop variable* where you can choose any variable name which fits the Python rules for variable names. The second question mark needs to be the number of letters in the mystery word. *Clue*: look back to [Step 2: Displaying the mystery word at the start of the game](../step02-choose_word_and_display/STEP2.md#set-up-the-variable-for-the-start-of-the-game) to see how to use the number of letters in the mystery word.
+You need to fill in the question marks. The first question mark is the name of a *loop variable* where you can choose any variable name which fits the Python rules for variable names. The second question mark needs to be the number of letters in the mystery word. *Clue*: look back to [Step 2: Set up the variable for the start of the game](../step02-choose_word_and_display/STEP2.md#set-up-the-variable-for-the-start-of-the-game) to see how to use the number of letters in the mystery word.
 
 This line will take your loop variable and set it to 0 the first time the loop runs, 1 the second time the loop runs, 2 the third time etc up to one less than the number of letters in the mystery word.
 
