@@ -12,25 +12,29 @@ This is the overall sequence of our loop:
 
 3. *if it isn't* the computer increases the number of wrong guesses by one; *if it is* then the computer updates the ```word_with_guesses``` list and replaces underscores with the correct guessed letter
 
-4. the computer clears the screen and draws the gallows with the right picture, depending on how many wrong guesses the player has already had
+4. the computer clears the screen and draws the right picture, depending on how many wrong guesses the player has already had
 
 5. the computer prints the updated ```word_with_guesses``` list
 
 6. to help the player, the computer also prints a list of any letters the player has guessed wrongly so far
 
-   back to step 1 . the computer asks the player to guess a letter ... 
+7. back to step 1: the computer asks the player to guess a letter ...
 
 The loop continues running until either the player has correctly guessed the word, or the player has run out of guesses and is hanged. So we also need to keep track of whether the player has won or lost.
 
-Firstly, we will write the code for the player to make a single guess at a letter. Then, in Step 4, we will make this code into a loop.
+Firstly, we will write the code for the player to make a single guess at a letter. Then, in Step 4 of these instructions, we will make this code into a loop.
 
 ## We need some new variables
 
-We've mentioned a variable to hold the number of wrong guesses a couple of times, but, so far, we haven't made one. In the *VARIABLES* block of your code make a variable for the number of wrong guesses and set it to 0. I called mine ```num_wrong_guesses``` but you can choose your own name.
+We're going to need two new variables - put these in the *VARIABLES* block of code.
 
-In item 6 of the list above we get the computer to print out all the previous wrong letters - we'll keep track of these in another Python *list*. At the beginning this an empty list, so add another line, below the previous one, where you create a list variable (I called mine ```wrong_guesses_list```) and set it to ```[]```, which means it's an empty list.
+1. Make a variable for the number of wrong guesses and set it equal to 0. I called mine ```num_wrong_guesses``` but you can choose your own name. Do you remember how to make a variable and set its value to 0?
+
+2. Make a variable which will hold a *list* of all the player's wrongly guessed letters (see step 6 in the list above) and set it to be an empty list. I called mine ```wrong_guesses_list```. To set a variable to an empty list make its value equal to ```[]```.
 
 ## Using ```input()``` to get the player to choose a letter
+
+We'll now build up the code for the player to make a single guess. The next lines will go in the *MAIN CODE* block of code.
 
 You probably know the Python function ```input()``` to ask the user to type in something. We will use this to ask the player to guess a letter. You will need to put a *prompt* string inside the brackets (some text which Python will print when asking for input - don't forget to put the prompt in quotes) and you will also need a variable to put the guess in.
 
@@ -155,3 +159,4 @@ We have only coded one guess by the player, then the code gets to the end and st
 
 [Go to Step 4 - More guesses, and ending the game](../step04-ending_the_game/STEP4.md)
 
+[Go back to previous page](../step02-choose_word_and_display/STEP2.md)
