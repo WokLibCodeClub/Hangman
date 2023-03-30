@@ -100,7 +100,8 @@ system('cls')
 # Display the first picture (just the gallows and no body parts)
 print(pictures[0])
 
+# Give away the mystery word
+print('Mystery word:', word_to_guess, '\n')
+
 # Print the mystery word with underscores and spaces instead of letters
 print(' '.join(word_with_guesses))
-
-
