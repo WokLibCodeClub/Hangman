@@ -95,7 +95,7 @@ Test your code again. If it's all working the programme will let you know if you
 
 ## Get rid of the line that gives away the mystery word
 
-Finally, before you let your friends have a go at your new game, you should locate the line of code which displays the mystery word. Either delete this line, or add a ```#``` character at the beginning to turn it into a comment so that Python will ignore this line and not print the mystery word before it's been guessed.
+Finally, before you let your friends have a go at your new game, you should locate the *two* places where there is a line of code which displays the mystery word. Either delete these line, or add a ```#``` character at the beginning of each to turn them into comments so that Python will ignore these lines and not print the mystery word before it's been guessed.
 
 You have now coded Hangman! Well done. See if you can beat the computer in your own game.
 
@@ -105,9 +105,11 @@ There are some modifications you could put in to your game:
 
 1. This code doesn't check if the player accidentally types more than one letter during a guess, so one modification would be to test this and warn the player if they type more than one character. How could you do that?
 
-2. If you play your game many times you might wonder whether you are winning more or less often than the computer. You could add code to keep the score and display it at the end of each game.
+2. You could adapt your game so that at the end it asked if you wanted to play again, and then restarted the game without you having to click on the Run arrow.
 
-3. If you play so often that you start to see the same mystery words coming up over and over again you might want to find a longer list of words. You can search for lists of English words on the internet. If you find a good list you will have to convert all the words to capital letters (you could write Python code to do this) then upload your improved word list to your trinket project.
+3. If made the modification in number 2 above, and played Hangman many times you might wonder whether you were winning more or less often than the computer. You could add code to keep the score and display it at the end of each game.
+
+4. If you play so often that you start to see the same mystery words coming up over and over again you might want to find a longer list of words. You can search for lists of English words on the internet. If you find a good list you will have to convert all the words to capital letters (you could write Python code to do this) then upload your improved word list to your trinket project.
 
 Have fun.
 
