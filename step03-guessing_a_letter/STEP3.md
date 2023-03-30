@@ -104,7 +104,7 @@ Here is the structure of the first line of the ```for``` loop:
 for ? in range(?):
 ```
 
-You need to fill in the question marks. The first question mark is the name of a *loop variable* where you can choose any variable name which fits the Python rules for variable names. The second question mark needs to be the number of letters in the mystery word. *Clue*: look back to [Step 2: Displaying the mystery word at the start of the game](../step02-choose_word_and_display/STEP2.md#displaying-the-mystery-word-at-the-start-of-the-game) to see how to use the number of letters in the mystery word.
+You need to fill in the question marks. The first question mark is the name of a *loop variable* where you can choose any variable name which fits the Python rules for variable names. The second question mark needs to be the number of letters in the mystery word. *Clue*: look back to [Step 2: Displaying the mystery word at the start of the game](../step02-choose_word_and_display/STEP2.md#set-up-the-variable-for-the-start-of-the-game) to see how to use the number of letters in the mystery word.
 
 This line will take your loop variable and set it to 0 the first time the loop runs, 1 the second time the loop runs, 2 the third time etc up to one less than the number of letters in the mystery word.
 
@@ -136,13 +136,13 @@ Inside the ```for``` loop, (which means any lines of code inside the loop *must*
 
 In place of the question mark put the name of your loop variable. In Python if we want to check if two things are equal we use a *double equals sign*: ```==```.
 
-#### If the player made a good guess...
+#### The players guess is the same as the current letter
 
 We have compared the player's guess with a letter in the mystery word. *If they are equal* we need to do two things
 
 - first, add a line of code to change the Boolean variable ```good_guess``` to be True (this line has to be indented *twice* as it is inside the ```for``` loop *and* inside the ```if``` block)
 
-><details><summary>Click here if you need to see how to do this</summary>
+<details><summary>Click here if you need to see how to do this</summary>
 
 ```python
     good_guess = True
@@ -160,35 +160,55 @@ We have compared the player's guess with a letter in the mystery word. *If they 
 
 Put your loop variable in place of the question mark.
 
-*If the player's guess and the letter in the mystery word are not equal* then we just go on to check the next letter, so we don't need to write any code for an ```else``` option in this ```if``` block.
+#### The players guess is not the same as the current letter
 
-### Was it a good guess?
+If the player's guess and the current letter in the mystery word are *not equal* then we don't have to do anything - we just go on to check the next letter in the word, so we don't need to write any code for this.
+
+### Did the player make a good guess?
 
 Once the ```for``` loop has finished it means we have checked the player's guess against *every* letter in the mystery word. Before we started we set the variable ```good_guess``` to ```False```. What is it set to now?
 
-Well, if the player's guess matched a letter in the word our ```if``` block will have set this variable to ```True```, meaning it was a good guess. But if there were no matches in the mystery word, then this variable will still be set to ```False```, and that tells us it was a wrong guess. If it's a wrong guess we do two things - add one to the number of wrong guesses, and add the player's guess to the list of wrong guesses.
+Well, if the player's guess matched a letter in the word our ```if``` block will have set this variable to ```True```, meaning it was a good guess. But if there were no matches in the mystery word, then this variable will still be set to ```False```, and that tells us it was a bad guess. If it's a bad guess we do two things:
 
-So after the ```for``` loop we can put in an ```if``` block to check the setting of ```good_guess```:
+1. add one to the number of wrong guesses, and
+2. add the player's guess to the list of wrong guesses.
+
+So *after* the ```for``` loop we can put in another ```if``` block to check the setting of ```good_guess```. This block is *not* part of the ```for``` loop, so this line is *not* indented at all:
+
 ```python
 if good_guess == False:
-  number_of_wrong_guesses += 1
+  num_wrong_guesses += 1
   wrong_guesses_list.append(a)
 ```
-You should put your own variable names in place of the one's I've used.
+
+(These are *my* variable names. You should use your own variable names in place of mine if they are different.)
 
 **Be careful** with the indentation - this ```if``` block is *not* part of the ```for``` loop.
 
 We are nearly done with coding the player's guess!
 
-### Reset the screen after the player's guess
+### Redraw the screen after the player's guess
 
-These lines of code need to be added to the end, after the last ```if``` block, but they are not indented, because they are not part of the if test.
+We just need three more lines of code to complete coding the player's guess, and these lines go after the last ```if``` block. They are *not* indented:
 
-First, clear the screen using
+first, clear the screen using
+
 ```python
 system('cls')
 ```
-Second, ```print``` the item from the list of pictures which matches the number of wrong guesses the player has made. (The number of wrong guesses will go inside square brackets after the name of the list of pictures.)
+
+second, ```print``` the picture from the list of pictures which matches the number of wrong guesses the player has made. 
+
+You should find a line of code already here which prints the first picture ```print(pictures[0])```, so you need to **edit** this line, so in place of the 0 you put the variable for the number of wrong guesses.
+
+(Since the player has only made one guess so far the number of wrong guesses can only be 0 or 1.)
+
+You will also find already here the line
+
+```python
+
+```
+
 
 Third, ```print``` the partially guessed word, using the ```join()``` function to put a space between each character (this is the same code you have used already to print the partially guessed word). You could add a bit of text inside the brackets before ```' '.join``` to explain what this line means.
 
