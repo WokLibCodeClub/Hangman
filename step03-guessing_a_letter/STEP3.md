@@ -222,6 +222,8 @@ That's the end of the code for the player's first guess. Now we can save the cod
 
 Run your code. When Python asks you to guess a letter try one that *is* in the mystery word (you can do this because the code is showing what the mystery word is).
 
+**Don't forget to click the mouse once inside the Result panel to switch the focus before you type a letter!!**
+
 You should see the display of the word with underscores change to show your chosen letter instead of underscores.
 
 Now run the code again and choose a letter which is *not* in the mystery word. You should see the picture change, to show the head of the person, and the list of wrong guesses should be displayed showing your incorrect letter.
