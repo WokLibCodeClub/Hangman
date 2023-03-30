@@ -58,6 +58,8 @@ word_to_guess = choice(wordlist)
 
 Put this after the lines to open the file and read the words into a list.
 
+---
+
 ## Giving away the mystery word
 
 Now we do something which seems a bit silly: we get the computer to display the mystery word. Add this line *as the last line in the project* in the *MAIN CODE* block of the project:
