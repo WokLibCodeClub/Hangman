@@ -38,13 +38,13 @@ We'll now build up the code for the player to make a single guess. The next line
 
 ## Using ```input()``` to get the player to choose a letter
 
-The Python ```input()``` function is used to ask the user to type in something. Inside the brackets you can put some text (inside quotes) to tell the player what is wanted (a *prompt* string). This might be to ask the player to guess a letter, for example. The result - what the player types - will go into a variable. The Python code looks like:
+The Python ```input()``` function is used to ask the user to type in something. Inside the brackets you can put some text (inside quotes) to tell the player what is wanted (a *prompt* string). This might be to ask the player to guess a letter, for example. The result - what the player types - will go into a variable. The Python code looks like this:
 
 ```python
 a = input(?)
 ```
 
-where you can put your own prompt string in place of the question mark. ```a``` a is my variable name for the answer.
+where you need to put your own prompt string in place of the question mark. ```a``` a is my variable name for the answer.
 
 >### Recommendation
 
