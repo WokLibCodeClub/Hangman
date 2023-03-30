@@ -126,7 +126,7 @@ You have now coded Hangman! Well done. See if you can beat the computer in your 
 
 ## Challenges
 
-There are some modifications you could put in to your game:
+There are some modifications you could put into your game:
 
 1. This code doesn't check if the player accidentally types more than one letter during a guess, so one modification would be to test this and warn the player if they type more than one character. How could you do that?
 
