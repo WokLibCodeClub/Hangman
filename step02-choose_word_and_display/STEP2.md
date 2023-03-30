@@ -4,7 +4,7 @@ In old-fashioned Hangman (before computers) one player would choose a mystery wo
 
 In the computer version the computer chooses the word and the player has to try and guess it.
 
-In the starter project you will see a tab titled ```main.py```, and next to it another tab titled ```Hangman_words.txt```. This tab refers to a computer *file* which has been uploaded to the Trinket project. If you click on this tab you will see a list of 400 words, all in capital letters, which are from six to 10 letters long and fit the rules. We will have the computer select a word at random from this list as the mystery word to guess.
+In the starter project, on the left side, you will see two tabs, one labelled ```main.py```, and the other labelled ```Hangman_words.txt```. This tab refers to a computer *file* which has been uploaded to the Trinket project. If you click on this tab you will see a list of 400 words, all in capital letters, which are from six to 10 letters long and fit the rules. We will have the computer select a word at random from this list as the mystery word to guess.
 
 To do this we need to write code to
 
