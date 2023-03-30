@@ -82,11 +82,15 @@ which will convert anything the player types into upper case.
 
 ### Unfair to the player
 
-Next, we're going to be a bit unfair to the player - and assume that the player's guess is *wrong*. We'll make a **_Boolean_** variable (one which can be ```True``` or ```False```) and add it to the bottom of the code, like this:
-```
+When the player guessed a letter was it a good guess or a bad guess? We keep track of this by making another variable which is of the type ***boolean***, which means it must be equal to either ```True``` or ```False```. We'll call this variable ```good_guess```.
+
+We'll be a bit unfair to the player by assuming that the player had made a bad guess. To do this in Python code we'll set the boolean variable to ```False```. You'll see how this works in a litte bit.
+
+Add this line of code after the last line to make the boolean variable equal to ```False```:
+
+```python
 good_guess = False
 ```
-You'll see how we use this in a minute.
 
 ## Is the player's guessed letter in the mystery word?
 
