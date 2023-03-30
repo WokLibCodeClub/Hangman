@@ -116,7 +116,7 @@ print('Mystery word: ', word_to_guess, '\n')
 
 This is obviously silly, as the game is about trying to guess this word. However, when we are writing and testing the code it will be very useful to know what the word is, to check if our code works properly. And when the code is all working we will delete this line.
 
-Note the text ```\n``` in the line above - this will print a blank line before displaying the word to guess.
+Note the text ```\n``` in the line above - this will print a blank line after displaying the word to guess.
 
 Run your code. Your display should look something like this:
 
