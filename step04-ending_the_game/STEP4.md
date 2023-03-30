@@ -1,39 +1,55 @@
-# Giving the player more than one guess
+# Making more than one guess
 
-As said in the last section we are going to put all the code for the player's guess inside a loop so the player can keep on guessing letters.
+We're now going to put all the code for the player's guess inside a loop so the player can keep on guessing letters.
 
-This will be a forever loop, which means it will keep going forever, except we will add in a bit of code to see if the player has won or lost and if either of these is true then we will jump out of the forever loop using the Python command ```break```.
+We will use a Python forever loop, except it won't go on forever because we will add in a bit of clever code which lets us ***jump out*** of the loop. This will happen if the player has either won or lost the game.
+
+As you will see, the key Python word to jump out of a loop is ```break```.
 
 ## Making a forever loop
 
 A Python forever loop begins with the code
+
 ```python
 while True:
 ```
+
 then all the lines of code which we want to be *inside* the forever loop have to be indented.
 
-If you followed the suggestion to put a comment in your code at the start of the section dealing with the player's guess then you will quickly be able to find this point. Put the ```while True:``` line above the comment, then select all the code from here to the end and press the TAB key - you should see *all* these lines get indented together. (And if some lines were already indented they should now be indented twice.)
+Insert this line of code just before the line which includes the ```input()``` function.
 
-If you didn't put a comment in your code you will have to go back to the previous step and find where this would go.
+If you followed the suggestion to put a comment in your code at the start of the section dealing with the player's guess then you will quickly be able to find this point. 
 
-Save your code and test it. You should be able to keep guessing letters, and the display should update correctly as you make a right guess or a wrong guess, but you will find that it keeps asking you to guess a letter even after the gallows is complete, or you have completely guessed the word, and when you make another guess it might give an error ```IndexError: list index out of range```. This means that you are trying to print a picture from the pictures list that doesn't exist. This happens because we haven't yet coded the end of the game, and it is stuck in the forever loop.
+Everything from here to the end of the code needs to be **indented**. Note, some lines are already indented - for these lines we need to add a further indentation.
 
-## Breaking out of the forever loop
+The quick way to do this in *trinket* is to select all the lines of code you want to indent and press the TAB key once. That should indent all the selected lines by two spaces.
 
-We need to write code which will work out if the player has won or lost, to know when to break out of the forever loop. We will put this code at the end of the forever loop (*inside* the loop).
+Save your code and run it. You should be able to keep guessing letters, and the display should update correctly as you make a right guess or a wrong guess, but you will find that it keeps asking you to guess a letter even after the gallows is complete, or you have completely guessed the word, and when you make another guess it might give an error ```IndexError: list index out of range```. This means that you are trying to print a picture from the pictures list that doesn't exist. This happens because we haven't yet coded the end of the game, and it is stuck in the forever loop.
+
+## Jumping out of the forever loop
+
+We need to write code which will work out if the player has won or lost, to know when to jump out of the forever loop. We will put this code at the end of the forever loop (but *inside* the loop, so the next lines still need to be indented).
+
+### Working out if the player has lost
 
 If the player has *lost* then the body hanging on the gallows is complete. How many wrong guesses does this take? We could test the variable which holds the number of wrong guesses to find out if the player has lost using:
+
 ```python
-if wrong_guesses_variable == losing number:
+if num_wrong_guesses == ?:
   break
 ```
-This code will break out of the forever loop when the player has lost (you will have to put the name of your number of wrong guesses variable, and the right number to make your code work).
+
+In place of the question mark put the number of wrong guesses for when the player has lost. (Also, if you used a different variable name then use your name in place of mine.)
+
+### Working out if the player has won
 
 If the player has *won* then all the letters have been guessed. In this case there will be no more underscore characters in the list variable we were using to display the mystery word. Python has a very neat way of checking if a particular item is present in a list. To check if the text "_" is present in the list we could use
+
 ```python
-if "_" in name_of_list_variable:
+if "_" in ?:
   break
 ```
+
 (substitute the name of your list variable). This code will break out of the loop if there is a "\_" character anywhere in the list, **but that's not what we want!** We actually want to test if the "_" character is *absent* from the list, so in Python we can do this by adding in the word ```not```:
 ```python
 if "_" not in name_of_list_variable:
