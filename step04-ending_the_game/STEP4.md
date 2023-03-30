@@ -111,6 +111,6 @@ There are some modifications you could put in to your game:
 
 Have fun.
 
-[Go back to main page](../README.md)
+[Return to main page](../README.md)
 
-[Go to previous page](../step03-guessing_a_letter/STEP3.md)
+[Go back to previous page](../step03-guessing_a_letter/STEP3.md)
