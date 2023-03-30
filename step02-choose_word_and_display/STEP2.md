@@ -14,7 +14,7 @@ To do this we need to write code to
 
 Each of these operations needs a single line of Python code. Put these lines in the *VARIABLES* block of code after the end of the ```pictures``` list.
 
-## Opening the file
+## 1. Opening the file
 
 In Python we often write code where we need to access some information from another file on the computer, or even a file on the worldwide web. If the file just contains text characters we use the Python function ```open()```, and inside the brackets we put the name of the file, (which must be inside single or double quotes), then a comma,  then the *"mode"* of opening, which means whether we tell Python if we want to read data from the file (mode ```'r'```), or  start writing in a completely new file (mode ```'w'```), or add more data on to the end of an existing file (mode ```'a'```).
 
@@ -24,7 +24,7 @@ We usually link the opened file to a variable which is a *file* type of variable
 wordfile = open('Hangman_words.txt', 'r')
 ```
 
-## Reading the words from the file into a Python list
+## 2. Reading the words from the file into a Python list
 
 We need to make a **list** variable to hold the list of words. In this example the list variable is called ```wordlist``` but you can choose your own name if you like.
 
@@ -40,7 +40,7 @@ The middle part of this line is ```wordfile.read()``` which *reads* all the word
 
 The beginning of this line ```wordlist =``` simply creates a list variable called ```wordlist``` which will hold all the words as a list. You could add a line of code to *print* this list if you want to see what it looks like.
 
-## Choosing a word at random from the list
+## 3. Choosing a word at random from the list
 
 Python has a ready-made function for choosing an item at random from a list. The Python function is ```choice()``` where you put the name of the list variable inside the brackets. ```choice()``` is one of the functions contained in the ```random``` library, so if you want to use ```choice()``` in your code you have to ***import*** this library, which means at the top of your code you need to include the line
 
