@@ -80,17 +80,21 @@ As the player guesses letters which might be in the word the computer will displ
 
 At the start of the game none of the letters have been guessed, so we need to display the word with underscore characters for each letter.
 
-How many underscores? Well, this will be the number of letters in the mystery word. We can easily find this out because text strings in Python are a lot like lists, and you probably know that the function for counting the number of items in a list is ```len()```. We can use the same function for counting the number of letters in a text string.
+How many underscores? Well, this will be the number of letters in the mystery word. We can easily find this out because text strings in Python are a lot like lists, and you probably know that the function for counting the number of items in a list is ```len()```. We can use the same function for counting the number of letters in a text string, so to find the number of letters in a string variable, like ```word_to_guess```, we would use ```len(word_to_guess)```.
 
-We will make a text variable to hold all the underscores, (and we will change the text in this variable as the player correctly guesses letters). If we want a text variable with, say,  eight underscores we can use multiplication! Yes, you can multiply text strings. The code ```'_' * 8``` would produce a text string with eight underscores. But we want to use the number of letters in the mystery word.
+If we want a text variable with, say,  eight underscores we can use multiplication! Yes, you can multiply text strings. The code ```'_' * 8``` would produce a text string with eight underscores. But we want to use the number of letters in the mystery word.
 
-Add this line of code in the *VARIABLES* block of the project after the line which makes the ```word_to_guess``` variable:
+Use the previous two paragraphs to help you write a line of Python code which sets a new text variable (I called mine ```word_with_guesses```) equal to the number of underscores in the text variable ```word_to_guess```. Put this line after the previous line.
+
+<details><summary>Click here to see one way to do it</summary>
 
 ```python
 word_with_guesses = '_' * len(word_to_guess)
 ```
+  
+</details>
 
-which makes a text variable with one underscore for each letter in the mystery word.
+<p>
 
 ### Turning the word with guesses into a list
 
