@@ -52,7 +52,7 @@ where you need to put your own prompt string in place of the question mark. ```a
 
 ### Upper case or lower case?
 
-The words in the ```Hangman_words.txt``` file are all in upper case (capital) letters, but the player might type in a lower case ```'a'```. Python is very fussy about upper case and lower case letters. If the player guesses the letter "a", and the word is "HANGMAN", Python will say there is no "a" in "HANGMAN".
+The words in the ```Hangman_words.txt``` file are all in upper case (capital) letters, but the player might type in a lower case ```'a'```. Python is very fussy about upper case and lower case letters. If the player guesses the letter 'a', and the word is 'HANGMAN', Python will say there is no 'a' in 'HANGMAN'.
 
 We can insists that the player only types capital letters when making guesses, but another way is to *convert* any letter the player types into upper case, which avoids the problem. The Python function ```upper()``` is used to convert text to upper case letters.
 
