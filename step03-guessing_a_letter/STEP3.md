@@ -84,7 +84,7 @@ which will convert anything the player types into upper case.
 
 When the player guessed a letter was it a good guess or a bad guess? We keep track of this by making another variable which is of the type ***boolean***, which means it must be equal to either ```True``` or ```False```. We'll call this variable ```good_guess```.
 
-We'll be a bit unfair to the player by assuming that the player made a bad guess. To do this in Python code we'll set the boolean variable to ```False```. You'll see how this works in a litte bit.
+We'll be a bit unfair to the player by assuming that the player made a bad guess (the guessed letter *wasn't* in the mystery word). To do this in Python code we'll set the boolean variable to ```False```. You'll see how this works in a litte bit.
 
 Add this line of code after the last line to make the boolean variable equal to ```False```:
 
@@ -142,7 +142,7 @@ We have compared the player's guess with a letter in the mystery word. *If they 
 
 - first, add a line of code to change the Boolean variable ```good_guess``` to be True (this line has to be indented *twice* as it is inside the ```for``` loop *and* inside the ```if``` block)
 
-<details><summary>Click here if you need to see how to do this</summary>
+><details><summary>Click here if you need to see how to do this</summary>
 
 ```python
     good_guess = True
