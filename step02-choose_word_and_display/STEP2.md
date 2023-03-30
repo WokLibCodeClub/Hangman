@@ -84,7 +84,7 @@ How many underscores? Well, this will be the number of letters in the mystery wo
 
 If we want a text variable with, say,  eight underscores we can use multiplication! Yes, you can multiply text strings. The code ```'_' * 8``` would produce a text string with eight underscores. But we want to use the number of letters in the mystery word.
 
-Use the previous two paragraphs to help you write a line of Python code which sets a new text variable (I called mine ```word_with_guesses```) equal to the number of underscores in the text variable ```word_to_guess```. Put this line after the previous line.
+Use the previous two paragraphs to help you write a line of Python code which sets a new text variable (I called mine ```word_with_guesses```) equal to the number of underscores in the text variable ```word_to_guess```. Put this line after the previous line. Do have a go at this before looking at the answer.
 
 <details><summary>Click here to see one way to do it</summary>
 
