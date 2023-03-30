@@ -94,7 +94,7 @@ good_guess = False
 
 ## Is the player's guessed letter in the mystery word?
 
-Once the player has guessed a letter we need to go through every letter in the mystery word to see if the guessed letter in the word. We'll do this with a Python ```for``` loop, and it needs to repeat exactly once for each letter in the mystery word.
+Once the player has guessed a letter we need to go through every letter in the mystery word to see if the guessed letter is in the word. We'll do this with a Python ```for``` loop, and it needs to repeat exactly once for each letter in the mystery word.
 
 ### ```for``` loop to cycle through the mystery word
 
@@ -104,7 +104,7 @@ Here is the structure of the first line of the ```for``` loop:
 for ? in range(?):
 ```
 
-You need to fill in the question marks. The first question mark is the name of a *loop variable* where you can choose any variable name which fits the Python rules for variable names. The second question mark needs to be the number of letters in the mystery word. *Clue*: look back to [Step 2](../step02-choose_word_and_display/STEP2.md#Displaying the mystery word at the start of the game).
+You need to fill in the question marks. The first question mark is the name of a *loop variable* where you can choose any variable name which fits the Python rules for variable names. The second question mark needs to be the number of letters in the mystery word. *Clue*: look back to [Step 2: Displaying the mystery word at the start of the game](../step02-choose_word_and_display/STEP2.md#displaying).
 
 Inside the loop we want to check each letter in the mystery word against the player's guess. We can use the fact that in Python a piece of text, for example a word, behaves a lot like a list: if I have a text variable ```myword = "GENIUS"``` then I can check what the 3rd letter is with the code ```myword[2]```, just as if the letters were items in a list.
 
