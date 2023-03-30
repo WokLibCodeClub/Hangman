@@ -77,9 +77,7 @@ How can Python tell if a particular item is present in a list?
 >'_' in word_with_guesses
 >```
 >
->and it should print ```True```, because the list contains the ```'_'``` character.
->
->This gives a way of testing if a particular character appears in a list of characters.
+>and it should print ```True```, because the list contains the ```'_'``` character. This gives a way of testing if the player has won.
 >
 >Actually, for our test for whether the player has won the game we want to check if the character ```'_'``` is ***NOT*** in the list, and Python lets us do that simply by adding the word ```not``` into the code. In this example the word has been fully guessed and there are no underscores left in the list:
 >
