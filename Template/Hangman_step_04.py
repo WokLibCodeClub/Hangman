@@ -14,17 +14,8 @@ from os import system
 pictures = [
 """
   _______
-  |/    |
-  |
-  |
-  |
-  |
-__|__
-""",
-"""
-  _______
-  |/    |
-  |     O
+  | /   |
+  |/
   |
   |
   |
@@ -32,8 +23,17 @@ __|__
 """,
 """
   _______
-  |/    |
-  |     O
+  | /   |
+  |/    O
+  |
+  |
+  |
+__|__
+""",
+"""
+  _______
+  | /   |
+  |/    O
   |     |
   |     |
   |
@@ -41,8 +41,8 @@ __|__
 """,
 """
   _______
-  |/    |
-  |     O
+  | /   |
+  |/    O
   |   --|
   |     |
   |
@@ -50,8 +50,8 @@ __|__
 """,
 """
   _______
-  |/    |
-  |     O
+  | /   |
+  |/    O
   |   --|--
   |     |
   |
@@ -59,8 +59,8 @@ __|__
 """,
 """
   _______
-  |/    |
-  |     O
+  | /   |
+  |/    O
   |   --|--
   |     |
   |    /
@@ -68,8 +68,8 @@ __|__
 """,
 """
   _______
-  |/    |
-  |     O
+  | /   |
+  |/    O
   |   --|--
   |     |
   |    / \\
@@ -103,28 +103,26 @@ system('cls')
 # Display the first picture (just the gallows and no body parts)
 print(pictures[0])
 
-# Print the mystery word with underscores and spaces instead of letters
-print("Word to guess:   " + ' '.join(word_with_guesses))
+# Give away the mystery word
+print('Mystery word:', word_to_guess, '\n')
 
-# Print the mystery word for testing purposes
-# We will comment this line when the game is finished otherwise it spoils the game!
-# The \n inside the quotes tells print to start a new line
-#print('\nThe word to guess is: ' + word_to_guess)
+# Print the mystery word with underscores and spaces instead of letters
+print(' '.join(word_with_guesses))
+
 
 while True:
   # Beginning of code for player's guess
-  # \n inside the quotes tells Python to print a blank line
   a = input("\nGuess a letter: ")
   a = a.upper()
   good_guess = False
   
   # Loop to go through all the letters in mystery word
-  for l in range(len(word_to_guess)):
-    if word_to_guess[l] == a:
+  for letter in range(len(word_to_guess)):
+    if word_to_guess[letter] == a:
       # if it's a good guess then change the value of the Boolean variable
       good_guess = True
       # update the list variable with the correctly guessed letter
-      word_with_guesses[l] = a
+      word_with_guesses[letter] = a
   
   # If good_guess is still False then the player's guess wasn't in the mystery word
   if good_guess == False:
@@ -139,23 +137,22 @@ while True:
   # Display the correct picture for the number of wrong guesses
   print(pictures[num_wrong_guesses])
   
-  # Print the word to guess with any correct guesses substituted for underscores
-  print("Word to guess:   " + ' '.join(word_with_guesses))
+  # Give away the mystery word
+  print('Mystery word:', word_to_guess, '\n')
+  
+  # Print the mystery word with underscores and spaces instead of letters
+  print(' '.join(word_with_guesses))
   
   if len(wrong_guesses_list) > 0:
     print("\nWrong guesses so far: " + ' '.join(wrong_guesses_list))
     
-  # Code to break out of while True: loop if player has won or lost
-  if num_wrong_guesses == 6 or "_" not in word_with_guesses:
+  if num_wrong_guesses == 6:
     break
 
-# Code for when player has lost
+  if '_' not in word_with_guesses:
+    break
+  
 if num_wrong_guesses == 6:
-  print("\nYou lost - the word was " + ' '.join(word_to_guess))
-
-# Code for when player has won
-if "_" not in word_with_guesses:
-  print("\nCONGRATULATIONS - you won!")
-
-
-
+  print('\nBad luck. You lost. The mystery word was', word_to_guess)
+else:
+  print('\nCongratulations! You won.')
