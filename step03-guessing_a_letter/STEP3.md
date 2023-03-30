@@ -104,9 +104,31 @@ Here is the structure of the first line of the ```for``` loop:
 for ? in range(?):
 ```
 
-You need to fill in the question marks. The first question mark is the name of a *loop variable* where you can choose any variable name which fits the Python rules for variable names. The second question mark needs to be the number of letters in the mystery word. *Clue*: look back to [Step 2: Displaying the mystery word at the start of the game](../step02-choose_word_and_display/STEP2.md#displaying-the-mystery-word-at-the-start-of-the-game).
+You need to fill in the question marks. The first question mark is the name of a *loop variable* where you can choose any variable name which fits the Python rules for variable names. The second question mark needs to be the number of letters in the mystery word. *Clue*: look back to [Step 2: Displaying the mystery word at the start of the game](../step02-choose_word_and_display/STEP2.md#displaying-the-mystery-word-at-the-start-of-the-game) to see how to use the number of letters in the mystery word.
 
-Inside the loop we want to check each letter in the mystery word against the player's guess. We can use the fact that in Python a piece of text, for example a word, behaves a lot like a list: if I have a text variable ```myword = "GENIUS"``` then I can check what the 3rd letter is with the code ```myword[2]```, just as if the letters were items in a list.
+This line will take your loop variable and set it to 0 the first time the loop runs; 1 the second time the loop runs; 2 the next time etc up to one less than the number of letters in the mystery word.
+
+---
+
+>#### Try this in the trinket console
+>
+>Let's say the mystery word is 'GENIUS' and this is in a text variable called ```word_to_guess```. Set this up by typing
+>
+>```python
+>word_to_guess = 'GENIUS'
+>```
+>
+>If I write in the console
+>
+>```python
+>word_to_guess[0]
+>```
+>
+>it will print ```G``` because this is the letter which has the index value 0 in the text string. (Text strings are just like lists.) Try putting different numbers in the square brackets to print out the other letters of GENIUS.
+
+---
+
+Inside the loop we want to compare each letter in the mystery word with the player's guess. We can use the fact that in Python a piece of text, for example a word, behaves a lot like a list: if I have a text variable ```myword = "GENIUS"``` then I can check what the 3rd letter is with the code ```myword[2]```, just as if the letters were items in a list.
 
 As we go through the ```for``` loop the value of loop_variable increases, starting from 0, and we can look at the letters in the mystery word in turn, using this variable as the **index**, and seeing if that letter is equal to the player's guess.
 
