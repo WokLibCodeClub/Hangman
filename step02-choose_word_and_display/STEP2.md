@@ -60,31 +60,21 @@ Put this after the lines to open the file and read the words into a list.
 
 ---
 
-## Giving away the mystery word
+## A variable to display the partially guessed word
 
-Now we do something which seems a bit silly: we get the computer to display the mystery word. Add this line in the *MAIN CODE* block of the project *after* the line which prints ```pictures[0]```:
+As the player makes guesses for letters which might be in the mystery word we want the computer to display the mystery word as a mixture of underscores for letters which haven't been guessed yet, and letters which have been correctly guessed.
 
-```python
-print("\nMystery word: ", word_to_guess)
-```
+We will make a variable to hold this mixture of letters and underscores. I've called my variable ```word_with_guesses```. (You are free to choose a different name.)
 
-This is obviously silly, as the game is to try and guess this word. However, when we are writing and testing the code it will be very useful to know what the word is, to check if our code works properly. And when the code is all working we will delete this line.
+### Set up the variable for the start of the game
 
-Note the text ```\n``` in the line above - this will print a blank line before displaying the word to guess.
+At the start of the game none of the letters have been guessed, so the variable will consist of just underscores, one for each letter in the mystery word.
 
-## Displaying the mystery word during the game
+How can we find out how many underscores we need? We need to know how many letters there are in the mystery word. Luckily text variables in Python are a lot like lists, and you probably know that the function for counting the number of items in a list is ```len()```. We can use the same function for counting the number of letters in a text string. If the mystery word is in a variable called ```word_to_guess```, we would use ```len(word_to_guess)``` to get the number of letters.
 
-As the player guesses letters which might be in the word the computer will display the mystery word with any correctly guessed letters in their correct places, and underscores for letters which haven't been guessed. We need to find a way to write code to do this.
+If we want a text variable with, say,  eight underscores we can use multiplication! Yes, you can multiply bits of text. The code ```'_' * 8``` would produce a text string with eight underscores. But we want to use the number of letters in the mystery word.
 
-### Displaying the mystery word at the start of the game
-
-At the start of the game none of the letters have been guessed, so we need to display the word with underscore characters for each letter.
-
-How many underscores? Well, this will be the number of letters in the mystery word. We can easily find this out because text strings in Python are a lot like lists, and you probably know that the function for counting the number of items in a list is ```len()```. We can use the same function for counting the number of letters in a text string, so to find the number of letters in a string variable, like ```word_to_guess```, we would use ```len(word_to_guess)```.
-
-If we want a text variable with, say,  eight underscores we can use multiplication! Yes, you can multiply text strings. The code ```'_' * 8``` would produce a text string with eight underscores. But we want to use the number of letters in the mystery word.
-
-Use the previous two paragraphs to help you write a line of Python code which sets a new text variable (I called mine ```word_with_guesses```) equal to the number of underscores in the text variable ```word_to_guess```. Put this line after the previous line. Do have a go at this before looking at the answer.
+Use the previous two paragraphs to help you write a line of Python code which sets a new text variable (I called mine ```word_with_guesses```) equal to the number of underscores in the text variable ```word_to_guess```. Put this line *after* the ```choice()``` line in the *VARIABLES* block. Do have a go at this before looking at the answer.
 
 <details><summary>Click here to see one way to do it</summary>
 
@@ -98,23 +88,35 @@ word_with_guesses = '_' * len(word_to_guess)
 
 ### Turning the word with guesses into a list
 
-It would be nice to display the underscores with a space between each, otherwise they would all run together and you wouldn't know how many letters there were. To do this we need to turn our text variable ```word_with_guesses``` into a **list** variable. There is a function to do this called ```list()```.
+When we display our mixture of underscores and letters it would be nice to do this with a space between each character, otherwise the underscores would all run together and we wouldn't know how many letters there were in the mystery word. To do this we need to turn our ```word_with_guesses``` text variable into a **list** variable. There is a function to do this called ```list()```.
 
-Put this line of code after the previous line:
+Put this line of code *after* the previous line:
 
 ```python
 word_with_guesses = list(word_with_guesses)
 ```
 
-### Displaying the word with guesses with spaces
+## Displaying the word with guesses with spaces
 
-Once we have our word with guesses as a list we can use a special list command for printing a list with spaces between each item. That command is ```' '.join()```. Now we can print our mystery word with underscores and spaces. 
+Now we have converted our word with guesses into a list we can use a special list command for printing it with spaces between each item. That command is ```' '.join()```.
 
-Add this line in the *MAIN CODE* block just *before* the line where we give away the mystery word:
+We will want to use this line repeatedly in the game, so we don't want it as part of the set up code, we want it in the *MAIN CODE* section of the project. Add this line at the very end of the project code, just after the line where we print ```pictures[0]```:
 
 ```python
 print(' '.join(word_with_guesses))
 ```
+
+## Giving away the mystery word
+
+Now we do something which seems a bit silly: we get the computer to display the mystery word. Add this line in the *MAIN CODE* block of the project *after* the line which prints ```pictures[0]``` and before the line with the ```join()``` command:
+
+```python
+print("\nMystery word: ", word_to_guess)
+```
+
+This is obviously silly, as the game is about trying to guess this word. However, when we are writing and testing the code it will be very useful to know what the word is, to check if our code works properly. And when the code is all working we will delete this line.
+
+Note the text ```\n``` in the line above - this will print a blank line before displaying the word to guess.
 
 Run your code. Your display should look something like this:
 
