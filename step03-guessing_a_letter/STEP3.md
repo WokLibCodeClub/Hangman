@@ -56,6 +56,14 @@ The words in the ```Hangman_words.txt``` file are all in upper case (capital) le
 
 We can insist that the player only types capital letters when making guesses, but another way is to *convert* any letter the player types into upper case, which avoids the problem. The Python function ```upper()``` is used to convert text to upper case letters.
 
+Add the Python line
+
+```python
+a = a.upper()
+```
+
+which will convert anything the player types into upper case.
+
 ---
 
 >#### Experimenting with ```upper()```
