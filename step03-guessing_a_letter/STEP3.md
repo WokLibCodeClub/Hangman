@@ -34,7 +34,7 @@ We're going to need two new variables - put these in the *VARIABLES* block of co
 
 ---
 
-We'll now build up the code for the player to make a single guess. The next lines will go in the *MAIN CODE* block of code just after the line which prints the mixture of letters and underscores using the ```join()``` command.
+We'll now build up the code for the player to make a single guess. The next lines will go in the *MAIN CODE* block of code at the very end of the project.
 
 ## Using ```input()``` to get the player to choose a letter
 
@@ -138,7 +138,7 @@ Inside the ```for``` loop, (which means any lines of code inside the loop *must*
 
 In place of the question mark put the name of your loop variable. In Python if we want to check if two things are equal we use a *double equals sign*: ```==```.
 
-#### The players guess is the same as the current letter
+#### The player's guess is the same as the current letter
 
 We have compared the player's guess with a letter in the mystery word. *If they are equal* we need to do two things
 
@@ -162,7 +162,7 @@ We have compared the player's guess with a letter in the mystery word. *If they 
 
 Put your loop variable in place of the question mark.
 
-#### The players guess is not the same as the current letter
+#### The player's guess is not the same as the current letter
 
 If the player's guess and the current letter in the mystery word are *not equal* then we don't have to do anything - we just go on to check the next letter in the word, so we don't need to write any code for this.
 
@@ -191,7 +191,7 @@ We are nearly done with coding the player's guess!
 
 ### Redraw the screen after the player's guess
 
-We just need three more lines of code to complete coding the player's guess, and these lines go after the last ```if``` block. They are *not* indented:
+We just a few more lines of code to complete coding the player's guess, and these lines go after the last ```if``` block. They are *not* indented:
 
 first, clear the screen using
 
@@ -199,37 +199,32 @@ first, clear the screen using
 system('cls')
 ```
 
-second, ```print``` the picture from the list of pictures which matches the number of wrong guesses the player has made. 
-
-You should find a line of code already here which prints the first picture ```print(pictures[0])```, so you need to **edit** this line, so in place of the 0 you put the variable for the number of wrong guesses.
+second, ```print``` the picture from the list of pictures which matches the number of wrong guesses the player has made. This will be almost the same as the line we used previously to print the first picture ```print(pictures[0])```, except you should **edit** it, so in place of the 0 you put the variable for the number of wrong guesses.
 
 (Since the player has only made one guess so far the number of wrong guesses can only be 0 or 1.)
 
-You will also find already here the line
+thirdly, we want to repeat the line which gives away the mystery word - copy this line from higher up in the code
 
-```python
+fourthly, we want to copy the line which prints the mixture of underscores and letters and uses the ```join()``` command
 
-```
+lastly, we want to print a list of any wrong guesses the player has made. (At this stage there will either be one or none.) If the player has only made good guesses we don't need to print this list, so we can use another ```if``` statement to decide whether to print it or not. We do this by testing the length of the list of wrong guesses - if the length is 0 then we don't need to print it. If the length is more than zero then we do print it. Notice we are using the ```join()``` command again, to insert spaces between each item in the list. Here is the code:
 
-
-Third, ```print``` the partially guessed word, using the ```join()``` function to put a space between each character (this is the same code you have used already to print the partially guessed word). You could add a bit of text inside the brackets before ```' '.join``` to explain what this line means.
-
-Fourth, ```print``` the list of wrong guesses using the ```join()``` function to put a space between each item. We don't need this line if there aren't any wrong guesses, so we should put this line in an ```if``` block:
 ```python
 if len(wrong_guesses_list) > 0:
   print("\nWrong guesses so far: " + ' '.join(wrong_guesses_list))
 ```
-Here we are counting the items in the list of wrong guesses and only printing the list if it is not empty. Notice, I have added a bit of extra text to the beginning of the print function just to explain to the player what this list is. The ```\n``` forces Python to print a blank line to space out the display better.
+
+ The ```\n``` forces Python to print a blank line before the list, to space out the display better.
 
 ### Testing, testing...
 
-That's the end of the code for the player's guess. Now we have to save the code and TEST it! 
+That's the end of the code for the player's first guess. Now we can save the code and TEST it!
 
-Run your code. 
+Run your code. When Python asks you to guess a letter try one that *is* in the mystery word (you can do this because the code is showing what the mystery word is).
 
-If you followed the suggestion above about debugging to print out the mystery word then you will be able to "guess" a letter which you **_know_** is in the word. What happened? Did the guessed letter appear in place of underscores in the word?
+You should see the display of the word with underscores change to show your chosen letter instead of underscores.
 
-Run the code again. This time "guess" a letter which you know is **_not_** in the word. What happened? Did the gallows display change to show the person's head? Did your chosen letter appear in a list of wrong guesses?
+Now run the code again and choose a letter which is *not* in the mystery word. You should see the picture change, to show the head of the person, and the list of wrong guesses should be displayed showing your incorrect letter.
 
 If your code didn't work exactly as you want you will have to try and find the problem. If a line of code in trinket appears with a pink background that is a good place to start. Work through your code one line at a time, thinking what might be happening to the variables.
 
