@@ -45,34 +45,59 @@ This line will cause the code to break out of the forever loop and go on to any 
 
 ### Working out if the player has won
 
-If the player has *won* then all the letters in the mystery word have been guessed. In this case there will be no more underscore characters in the list variable we were using to hold the mixture of underscores and letters. 
+If the player has *won* then all the letters in the mystery word have been guessed. In this case there will be no more underscore characters in the list variable we were using to hold the mixture of underscores and letters.
 
 How can Python tell if a particular item is present in a list?
 
+>#### Try this in the trinket console:
+>
+>Copy this line and paste it into the console
+>
+>```python
+>'a' in ['a', 'p', 'p', 'l', 'e']
+>```
+>
+>You should find the console types ```True```. This is because (obviously) ```'a'``` is one of the items in the list. If you tried
+>
+>```python
+>'b' in ['a', 'p', 'p', 'l', 'e']
+>```
+>
+>it would print ```False``` because ```'b'``` is not in the list.
+>
+>Now set up a list variable like we might have in Hangman:
+>
+>```python
+>word_with_guesses = ['a', '_', '_', 'l', '_']
+>```
+>
+>Now type
+>
+>```python
+>'_' in word_with_guesses
+>```
+>
+>and it should print ```True```, because the list contains the ```'_'``` character.
+>
+>This gives a way of testing if a particular character appears in a list of characters.
+>
+>Actually, for our test for whether the player has won the game we want to check if the character ```'_'``` is ***NOT*** in the list, and Python lets us do that simply by adding the word ```not``` into the code. In this example the word has been fully guessed and there are no underscores left in the list:
+>
+>```python
+>word_with_guesses = ['a', 'p', 'p', 'l', 'e']
+>'_' not in word_with_guesses
+>```
+>
+> This will print ```True``` telling us that there are no underscores in the list.
 
-
-To check if the text "_" is present in the list we could use
+Our code to break out of the forever loop if the player has won will be something like
 
 ```python
-  if "_" in ?:
+  if "_" not in word_with_guesses:
     break
 ```
 
-(substitute the name of your list variable). This code will break out of the loop if there is a "\_" character anywhere in the list, **but that's not what we want!** We actually want to test if the "_" character is *absent* from the list, so in Python we can do this by adding in the word ```not```:
-
-```python
-if ? not in ?:
-  break
-```
-
-and this will now jump out of the loop if the player has won.
-
-We have two ```if``` blocks to add to the end of the ```while True``` loop, but Python actually gives a way to test **_both_** conditions with the one ```if``` block using the key word ```or```:
-```python
-if wrong_guesses_variable == losing number or "_" not in name_of_list_variable:
-  break
-```
-(you will have to adapt this line for your own variable names). The ```if``` line needs to be on a single line of code from the ```if``` to the ```:``` but in your browser you might find this rather long line has been split into two. Make sure you put it all on one line in your code.
+(substitute the name of your list variable if it is different).
 
 Save your code and test it. You should find the code will stop after you have won or lost, because in both cases we have now jumped out of the forever loop. The code won't ask you for any more guesses, but it won't tell you if you won or lost. What do we want to happen now?
 
@@ -82,20 +107,22 @@ We're nearly there.
 
 At the end of the code, *outside* the ```while True:``` loop (so not indented), we put code either to congratulate the player for being clever, or tell them they've lost, and let them know what the mystery word was.
 
-Our code will only ever get to these lines after the game has been won or lost but which is it? We can use the same tests we used inside the forever loop.
+Our code will only ever get to these lines after the game has been won or lost but which is it? We can use the same test for a loss that we used inside the forever loop, then we know if the player didn't lose they must have won!
 
 ```python
-if wrong_guesses_variable == losing number: # this means the player has lost
-  [WRITE CODE TO SAY THE PLAYER HAS LOST AND TO TELL THEM WHAT THE MYSTERY WORD WAS]
+if num_wrong_guesses == ?: # this means the player has lost
+  print(?) # WRITE SOME TEXT HERE TO SAY THE PLAYER HAS LOST AND TO TELL THEM WHAT THE MYSTERY WORD WAS]
 else: # this means the player has won
-  [WRITE CODE TO GIVE A MESSAGE OF CONGRATULATIONS]
+  print(?) # WRITE CODE TO GIVE A MESSAGE OF CONGRATULATIONS
 ```
 
-Test your code again. If it's all working the programme will let you know if you've won or lost. 
+You need to fill in the question marks. The first line will be the same as the line you coded inside the forever loop to ```break``` if the player lost.
+
+Test your code again. If it's all working the programme will now let you know if you've won or lost.
 
 ## Get rid of the line that gives away the mystery word
 
-Finally, before you let your friends have a go at your new game, you should locate the *two* places where there is a line of code which displays the mystery word. Either delete these line, or add a ```#``` character at the beginning of each to turn them into comments so that Python will ignore these lines and not print the mystery word before it's been guessed.
+Finally, before you let your friends have a go at your new game, you should locate the *two* places where there is a line of code which displays the mystery word. Either delete these lines, or add a ```#``` character at the beginning of each to turn them into comments so that Python will ignore these lines and not print the mystery word before it's been guessed.
 
 You have now coded Hangman! Well done. See if you can beat the computer in your own game.
 
