@@ -44,7 +44,7 @@ The Python ```input()``` function is used to ask the user to type in something. 
 a = input(?)
 ```
 
-where you need to put your own prompt string in place of the question mark. ```a``` a is my variable name for the answer.
+where you need to put your own prompt string in place of the question mark. ```a``` is my variable name for the answer.
 
 >### Recommendation
 
