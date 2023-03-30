@@ -138,7 +138,7 @@ while True:
   print(pictures[num_wrong_guesses])
   
   # Give away the mystery word
-  print('Mystery word:', word_to_guess, '\n')
+  # print('Mystery word:', word_to_guess, '\n')
   
   # Print the mystery word with underscores and spaces instead of letters
   print(' '.join(word_with_guesses))
