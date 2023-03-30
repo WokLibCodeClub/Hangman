@@ -205,7 +205,7 @@ second, ```print``` the picture from the list of pictures which matches the numb
 
 thirdly, we want to repeat the line which gives away the mystery word - copy this line from higher up in the code
 
-fourthly, we want to copy the line which prints the mixture of underscores and letters and uses the ```join()``` command
+fourthly, we want to copy the line which prints the mixture of underscores and letters and uses the ```join()``` command (again copy this from higher up in the code)
 
 lastly, we want to print a list of any wrong guesses the player has made. (At this stage there will either be one or none.) If the player has only made good guesses we don't need to print this list, so we can use another ```if``` statement to decide whether to print it or not. We do this by testing the length of the list of wrong guesses - if the length is 0 then we don't need to print it. If the length is more than zero then we do print it. Notice we are using the ```join()``` command again, to insert spaces between each item in the list. Here is the code:
 
