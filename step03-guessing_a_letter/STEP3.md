@@ -84,7 +84,7 @@ which will convert anything the player types into upper case.
 
 When the player guessed a letter was it a good guess or a bad guess? We keep track of this by making another variable which is of the type ***boolean***, which means it must be equal to either ```True``` or ```False```. We'll call this variable ```good_guess```.
 
-We'll be a bit unfair to the player by assuming that the player had made a bad guess. To do this in Python code we'll set the boolean variable to ```False```. You'll see how this works in a litte bit.
+We'll be a bit unfair to the player by assuming that the player made a bad guess. To do this in Python code we'll set the boolean variable to ```False```. You'll see how this works in a litte bit.
 
 Add this line of code after the last line to make the boolean variable equal to ```False```:
 
@@ -94,18 +94,17 @@ good_guess = False
 
 ## Is the player's guessed letter in the mystery word?
 
-Once the player has made a guess we need to loop through every letter in the mystery word to see if the guess is matched in the word, so we need to code a ```for``` loop, and it needs to repeat exactly once for each letter in the mystery word.
+Once the player has guessed a letter we need to go through every letter in the mystery word to see if the guessed letter in the word. We'll do this with a Python ```for``` loop, and it needs to repeat exactly once for each letter in the mystery word.
 
 ### ```for``` loop to cycle through the mystery word
 
-Here is the structure of the ```for``` loop:
+Here is the structure of the first line of the ```for``` loop:
 
 ```python
-for loop_variable in range(number_of_times_to_run_the_loop):
+for ? in range(?):
 ```
-Choose your loop_variable name for the loop.
 
-What Python function can you use to get the number_of_times_to_run_the_loop? *Clue*: this needs to be the number of letters in the mystery word - look back to [Step 2](../step02-choose_word_and_display/STEP2.md).
+You need to fill in the question marks. The first question mark is the name of a *loop variable* where you can choose any variable name which fits the Python rules for variable names. The second question mark needs to be the number of letters in the mystery word. *Clue*: look back to [Step 2](../step02-choose_word_and_display/STEP2.md#Displaying the mystery word at the start of the game).
 
 Inside the loop we want to check each letter in the mystery word against the player's guess. We can use the fact that in Python a piece of text, for example a word, behaves a lot like a list: if I have a text variable ```myword = "GENIUS"``` then I can check what the 3rd letter is with the code ```myword[2]```, just as if the letters were items in a list.
 
