@@ -34,7 +34,7 @@ We're going to need two new variables - put these in the *VARIABLES* block of co
 
 ---
 
-We'll now build up the code for the player to make a single guess. The next lines will go in the *MAIN CODE* block of code just before the line where we give away the mystery word.
+We'll now build up the code for the player to make a single guess. The next lines will go in the *MAIN CODE* block of code just after the line which prints the mixture of letters and underscores using the ```join()``` command.
 
 ## Using ```input()``` to get the player to choose a letter
 
