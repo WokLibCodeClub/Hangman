@@ -105,7 +105,7 @@ We're nearly there.
 
 At the end of the code, *outside* the ```while True:``` loop (so not indented), we put code either to congratulate the player for being clever, or tell them they've lost, and let them know what the mystery word was.
 
-Our code will only ever get to these lines after the game has been won or lost but which is it? We can use the same test for a the player losing (with an ```if``` statement) that we used inside the forever loop, but now we can also add an ```else:``` statement, because we know if the player didn't lose they must have won! Here is a sketch of the code to put at the very end of the project (not indented):
+Our code will only ever get to these lines after the game has been won or lost but which is it? We can use the same test for the player losing (with an ```if``` statement) that we used inside the forever loop, but now we can also add an ```else:``` statement, because we know if the player didn't lose they must have won! Here is a sketch of the code to put at the very end of the project (not indented):
 
 ```python
 if num_wrong_guesses == ?: # this means the player has lost
