@@ -26,21 +26,29 @@ Firstly, we will write the code for the player to make a single guess at a lette
 
 ## We need some new variables
 
-We're going to need two new variables - put these in the *VARIABLES* block of code.
+We're going to need two new variables - put these in the *VARIABLES* block of code after the line which makes the variable ```word_with_guesses```.
 
 1. Make a variable for the number of wrong guesses and set it equal to 0. I called mine ```num_wrong_guesses``` but you can choose your own name. Do you remember how to make a variable and set its value to 0?
 
 2. Make a variable which will hold a *list* of all the player's wrongly guessed letters (see step 6 in the list above) and set it to be an empty list. I called mine ```wrong_guesses_list```. To set a variable to an empty list make its value equal to ```[]```.
 
+---
+
+We'll now build up the code for the player to make a single guess. The next lines will go in the *MAIN CODE* block of code just before the line where we give away the mystery word.
+
 ## Using ```input()``` to get the player to choose a letter
 
-We'll now build up the code for the player to make a single guess. The next lines will go in the *MAIN CODE* block of code.
+The Python ```input()``` function is used to ask the user to type in something. Inside the brackets you can put some text (inside quotes) to tell the player what is wanted (a *prompt* string). This might be to ask the player to guess a letter, for example. The result - what the player types - will go into a variable. The Python code looks like:
 
-You probably know the Python function ```input()``` to ask the user to type in something. We will use this to ask the player to guess a letter. You will need to put a *prompt* string inside the brackets (some text which Python will print when asking for input - don't forget to put the prompt in quotes) and you will also need a variable to put the guess in.
+```python
+a = input(?)
+```
 
-Put the input line at the very bottom of the code for now. (Later we will put this line, and other lines which deal with the player's guess, inside a loop.)
+where you can put your own prompt string in place of the question mark. ```a``` a is my variable name for the answer.
 
-You could try putting in a **comment** line above the ```input()``` line, to remind you that this is where the code for the player's guess begins. You will need to find this place later.
+>### Recommendation
+
+>Put a **comment** line above the ```input()``` line to mark that this is where the code for the player's guess begins. You will need to find this place later. (A comment line begins with the ```#``` character.)
 
 ### Upper case or lower case?
 
