@@ -44,7 +44,7 @@ The Python ```input()``` function is used to ask the user to type in something. 
 a = input(?)
 ```
 
-where you need to put your own prompt string in place of the question mark. ```a``` is my variable name for the answer.
+where you need to put your own prompt string (inside quotes) in place of the question mark. ```a``` is my variable name for the answer.
 
 >### Recommendation
 >
@@ -128,7 +128,7 @@ This line will take your loop variable and set it to 0 the first time the loop r
 
 ---
 
-Inside the ```for``` loop, (which means this line *must* be indented) we compare the player's guess (which I have in a variable called ```a```) with the letter in the mystery word which corresponds to the loop variable. We do this using a Python ```if``` statement:
+Inside the ```for``` loop, (which means any lines of code inside the loop *must* be indented) we compare the player's guess (which I have in a variable called ```a```) with the letter in the mystery word which corresponds to the loop variable. We do this using a Python ```if``` statement:
 
 ```python
   if word_to_guess[?] == a:
@@ -136,16 +136,29 @@ Inside the ```for``` loop, (which means this line *must* be indented) we compare
 
 In place of the question mark put the name of your loop variable. In Python if we want to check if two things are equal we use a *double equals sign*: ```==```.
 
-This is comparing the player's guess with a letter in the mystery word. *If they are equal* we need to do two things
+#### If the player made a good guess...
 
-- first, change the Boolean variable ```good_guess``` to be True (this line has to be indented *twice* as it is in the ```for``` loop *and* the ```if``` block),
+We have compared the player's guess with a letter in the mystery word. *If they are equal* we need to do two things
 
-- second, change the **list** where we are keeping the updated word with guesses. Remember, this list contains a mixture of underscores and letters. If the loop variable now has the value 3, and we have found that the player's guess matches the letter of the mystery word with index 3, then in the list we need to replace the underscore item index 3 of the list with the guessed letter. So if my list variable is called ```word_with_guesses``` I could do this with the code
+- first, add a line of code to change the Boolean variable ```good_guess``` to be True (this line has to be indented *twice* as it is inside the ```for``` loop *and* inside the ```if``` block)
+
+<details><summary>Click here if you need to see how to do this</summary>
 
 ```python
-    word_with_guesses[loop_variable] = a
+    good_guess = True
 ```
-Use your own variable names in place of mine.
+  
+</details>
+
+<p>
+
+- second, change the **list** where we are keeping the "word with guesses". Remember, at the start, this list contains just underscores. If the loop variable now has the value 3, and we have found that the player's guess matches the letter of the mystery word with index 3, then in the ```word_with_guesses``` list we need to replace the underscore at item index 3 of the list with the guessed letter. The code to do this is
+
+```python
+    word_with_guesses[?] = a
+```
+
+Put your loop variable in place of the question mark.
 
 *If the player's guess and the letter in the mystery word are not equal* then we just go on to check the next letter, so we don't need to write any code for an ```else``` option in this ```if``` block.
 
