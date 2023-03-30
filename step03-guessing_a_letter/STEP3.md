@@ -88,7 +88,7 @@ When the player guessed a letter was it a good guess or a bad guess? We keep tra
 
 We'll be a bit unfair to the player by assuming that the player made a bad guess (the guessed letter *wasn't* in the mystery word). To do this in Python code we'll set the boolean variable to ```False```. You'll see how this works in a litte bit.
 
-Add this line of code after the last line to make the boolean variable equal to ```False```:
+Add this line of code after the line with the ```upper()``` function to make the boolean variable equal to ```False```:
 
 ```python
 good_guess = False
