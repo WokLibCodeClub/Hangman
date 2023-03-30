@@ -112,7 +112,7 @@ This line will take your loop variable and set it to 0 the first time the loop r
 
 ---
 
->#### Try this in the trinket console
+>#### Try this in the trinket console:
 >
 >Let's say the mystery word is 'GENIUS' and this is in a text variable called ```word_to_guess```. Set this up by typing
 >
@@ -130,7 +130,7 @@ This line will take your loop variable and set it to 0 the first time the loop r
 
 ---
 
-Inside the ```for``` loop, (which means any lines of code inside the loop *must* be indented) we compare the player's guess (which I have in a variable called ```a```) with the letter in the mystery word which corresponds to the loop variable. We do this using a Python ```if``` statement:
+Inside the ```for``` loop, (which means any lines of code inside the loop *must* be indented) we compare the player's guess (which I have in a variable called ```a```) with the letter in the mystery word with the index which corresponds to the value of the loop variable. We do this using a Python ```if``` statement:
 
 ```python
   if word_to_guess[?] == a:
