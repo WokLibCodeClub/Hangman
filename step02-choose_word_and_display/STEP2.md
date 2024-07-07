@@ -1,6 +1,6 @@
 # Choosing the word to guess
 
-In old-fashioned Hangman (before computers) one player would choose a mystery word - which has to be a normal dictionary word, not anyone or anything's name and not slang - and the other player would try to guess it.
+In old-fashioned Hangman (before computers) one player would choose a mystery word - which has to be a normal dictionary word, not anyone's or anything's name and not slang - and the other player would try to guess it.
 
 In the computer version the computer chooses the word and the player has to try and guess it.
 
