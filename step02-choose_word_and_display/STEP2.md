@@ -1,10 +1,10 @@
 # Choosing the word to guess
 
-In old-fashioned Hangman (before computers) one player would choose a mystery word - which has to be a normal dictionary word, not anyone or anything's name and not slang - and the other player would try to guess it.
+In old-fashioned Hangman (before computers) one player would choose a mystery word - which has to be a normal dictionary word, not anyone's or anything's name and not slang - and the other player would try to guess it.
 
 In the computer version the computer chooses the word and the player has to try and guess it.
 
-In the starter project, on the left side, you will see two tabs, one labelled ```main.py```, and the other labelled ```Hangman_words.txt```. This tab refers to a computer *file* which has been uploaded to the Trinket project. If you click on this tab you will see a list of 400 words, all in capital letters, which are from six to 10 letters long and fit the rules. We will have the computer select a word at random from this list as the mystery word to guess.
+In the starter project, on the left side, you will see two tabs, one labelled ```main.py```, and the other labelled ```Hangman_words.txt```. This second tab refers to a computer *file* which has been uploaded to the Trinket project. If you click on this tab you will see a list of 400 words, all in capital letters, which are from six to 10 letters long and fit the rules. We will have the computer select a word at random from this list as the mystery word to guess.
 
 To do this we need to write code to
 
@@ -114,7 +114,7 @@ Now we do something which seems a bit silly: we get the computer to display the 
 print('Mystery word: ', word_to_guess, '\n')
 ```
 
-This is obviously silly, as the game is about trying to guess this word. However, when we are writing and testing the code it will be very useful to know what the word is, to check if our code works properly. And when the code is all working we will delete this line.
+This is obviously silly, as the object of the game to guess this word, and we've just given it away. However, when we are writing and testing the code it will be very useful to know what the word is, to check if our code works properly. And when the code is all working we will delete this line.
 
 Note the text ```\n``` in the line above - this will print a blank line after displaying the word to guess.
 

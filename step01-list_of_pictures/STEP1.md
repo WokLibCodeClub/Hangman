@@ -70,9 +70,9 @@ which means the programme will wait until you press the Enter key (but see the n
 
 ### Typing in the Result (right hand) panel
 
->When your Python code includes an ```input()``` function the code will expect you to type something in the right hand Result panel of the trinket webpage.
+>When your Python code includes an ```input()``` function the code will expect you to type something in the right hand **Result** panel of the trinket webpage.
 >
->But while you're writing code Trinket assumes you are typing in the code editing (left hand) panel - this panel "**has the focus**". When you want to type something in the Result panel you need to **switch the focus** to the Result panel, and the way to do this is to click the mouse once inside the right panel.
+>But while you're writing code Trinket assumes you are typing in the code **Editing** (left hand) panel - this panel "**has the focus**". When you want to type something in the Result panel you need to **switch the focus** to the Result panel, and the way to do this is to click the mouse once inside the right panel.
 >
 >If you don't do this you may find that anything you type, even just pressing *Enter*, will appear in your code window, and you will have to use Control-Z to undo your action.
 >
