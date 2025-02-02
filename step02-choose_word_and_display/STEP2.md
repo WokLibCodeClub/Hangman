@@ -62,7 +62,7 @@ Put this after the lines to open the file and read the words into a list.
 
 ## A variable to display the partially guessed word
 
-As the player makes guesses for letters which might be in the mystery word we want the computer to display the mystery word as a mixture of underscores for letters which haven't been guessed yet, and letters which have been correctly guessed.
+As the player makes guesses for letters which might be in the mystery word we want the computer to display the mystery word as a mixture of underscores (for letters which haven't been guessed yet), and the letters which have been correctly guessed in their right places.
 
 We will make a variable to hold this mixture of letters and underscores. I've called my variable ```word_with_guesses```. (You are free to choose a different name.)
 
@@ -90,9 +90,24 @@ word_with_guesses = '_' * len(word_to_guess)
 
 When we display our mixture of underscores and letters it would be nice to do this with a space between each character, otherwise the underscores would all run together and we wouldn't know how many letters there were in the mystery word. To do this we need to turn our ```word_with_guesses``` text variable into a **list** variable. There is a function to do this called ```list()```.
 
-Put this line of code *after* the previous line:
+Here is a line of code to go *after* the previous line, which will turn the text string consisting of underscores into a *list* consisting of underscores:
 
 ```python
+word_with_guesses = list(word_with_guesses)
+```
+
+#### Revision added on 2 February 2025
+
+There is actually a slightly easier way of achieving a list of underscores for the variable ```word_with_guesses```. You can actually use multiplication with *lists*, so if you want to make a list consisting of, say, 5 zeros you could use ```[0] * 5``` which would produce the result ```[0, 0, 0, 0, 0]```. So to make a variable consisting of a list of underscore characters you would simply use
+
+```python
+word_with_guesses = ['_'] * len(word_to_guess)
+```
+
+This line of code would go ***instead of*** the two lines
+
+```python
+word_with_guesses = '_' * len(word_to_guess)
 word_with_guesses = list(word_with_guesses)
 ```
 
