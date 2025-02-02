@@ -113,13 +113,15 @@ word_with_guesses = list(word_with_guesses)
 
 ## Displaying the word with guesses with spaces
 
-Now we have converted our word with guesses into a list we can use a special list command for printing it with spaces between each item. That command is ```' '.join()```.
-
-We will want to use this line repeatedly in the game, so we don't want it as part of the set up code, we want it in the *MAIN CODE* section of the project. Add this line at the very end of the project code, just after the line where we print ```pictures[0]```:
+Now we have our "word with guesses" as a list we can use a special string function for printing the list with a space between each item in the list. That function is the ```join()``` function, and the code we need looks like this:
 
 ```python
 print(' '.join(word_with_guesses))
 ```
+
+The ```join()``` function is used to output the items in a list with a *separator* character between each item. The *separator* character goes inside the quote marks just before ```.join()``` (in this example the separator is just a space), and the list you want to print goes in the brackets. (People often use this function to print a list with commas between each item, and the code for that would be ```','.join(name of list)``` where you can now see a *comma* inside the quote marks.)
+
+We will want to use this line of code many times in the game, so we don't want it as part of the set up code, we want it in the *MAIN CODE* section of the project. So, make sure you put this line at the very end of the project code, just after the line where we print ```pictures[0]```.
 
 ## Giving away the mystery word
 
