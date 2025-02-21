@@ -2,7 +2,7 @@
 
 This is a Python version of the word-guessing game Hangman, which is more than 100 years old (but before computers were invented people had to play using paper and pencil).
 
-Here is a link to a video showing how the game works. The video also shows the Python version in action, and demonstrates the first steps in writing your own version of the game:
+Here is a link to a video showing how the game works. (Note: if you already know how to play *Hangman* then you don't need to watch this video.) The video also shows the Python version in action, and demonstrates the first steps in writing your own version of the game:
 
 [https://youtu.be/FOJO9RdFEF8](https://youtu.be/FOJO9RdFEF8)
 
