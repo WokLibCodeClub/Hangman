@@ -134,9 +134,11 @@ There are some modifications you could put into your game:
 
 3. If made the modification in number 2 above, and played Hangman many times you might wonder whether you were winning more or less often than the computer. You could add code to keep the score and display it at the end of each game.
 
-4. If you play so often that you start to see the same mystery words coming up over and over again you might want to find a longer list of words. You can search for lists of English words on the internet. If you find a good list you will have to convert all the words to capital letters (you could write Python code to do this) then upload your improved word list to your trinket project.
+4. If you play so often that you start to see the same mystery words coming up over and over again you might want to find a longer list of words. You can search for lists of English words on the internet. If you find a good list you can find some instructions in the link below telling you how to import your own word list into the Hangman game.
 
 Have fun.
+
+[Instructions for importing your own word list](../Importing_your_own_word_list/import_your_own_word_list.md)
 
 [Return to main page](../README.md)
 
