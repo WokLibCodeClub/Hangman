@@ -101,6 +101,8 @@ for p in pictures:
 
 You can look [here](ex_step1.md) to see an example of how the code might look if you've followed the instructions so far.
 
+### Now remove the loop...
+
 We don't actually need this ```for``` loop for the game. It was just an excuse to see if you remembered how to make a ```for``` loop. So remove your loop, and go back to the original code which ends with this line *not indented*
   
 ```python
