@@ -141,6 +141,12 @@ Run your code. Your display should look something like this:
 
 (except, of course, your mystery word will probably be something else, and the number of underscores may also be different).
 
+### Check code
+
+You can look [here](ex_step2.md) to see an example of how the code might look if you've followed the instructions so far. (The list of pictures is not shown in this example.)
+
+### Next step
+
 [Go to Step 3 - Guessing a letter](../step03-guessing_a_letter/STEP3.md)
 
 [Go back to previous page](../step01-list_of_pictures/STEP1.md)
