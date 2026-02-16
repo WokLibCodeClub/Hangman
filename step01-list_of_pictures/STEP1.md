@@ -109,6 +109,8 @@ print(pictures[0])
 
 which will print the first item in the pictures list, for when we are ready to start playing the game.
   
+### Next step
+
 [Go to Step 2 - Choosing and displaying the mystery word](../step02-choose_word_and_display/STEP2.md)
 
 [Go back to front page](../README.md)
