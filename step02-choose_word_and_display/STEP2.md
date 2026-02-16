@@ -1,4 +1,10 @@
-# Choosing the word to guess
+# Opening the file of words and selecting the mystery word
+
+## Quick look at what's in the starter project
+
+There are two ```import``` statements at the beginning of the starter project, which will import functions from external Python *libraries* which we will need in our code. The ```random``` library contains all sorts of functions connected with random numbers, which are always useful in games; and the ```os``` library is for functions which access parts of the computer *Operating System*, such as the function for clearing the screen.
+
+## Choosing the word to guess
 
 In old-fashioned Hangman (before computers) one player would choose a mystery word - which has to be a normal dictionary word, not anyone's or anything's name and not slang - and the other player would try to guess it.
 
