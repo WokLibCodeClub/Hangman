@@ -136,11 +136,15 @@ Finally, before you let your friends have a go at your new game, you should loca
 
 You have now coded Hangman! Well done. See if you can beat the computer in your own game.
 
+### Check code
+
+If you want to have a look at an example of how the whole project might look, after following all the instructions in the four steps, then click [here](ex_step4.md).
+
 ## Challenges
 
 There are some modifications you could put into your game:
 
-1. This code doesn't check if the player accidentally types more than one letter during a guess, so one modification would be to test this and warn the player if they type more than one character. How could you do that?
+1. This code doesn't check if the player accidentally types more than one letter during a guess, or if the player accidentally types a number or a special character, so one modification would be to test this and warn the player if they type something that's not allowed. How could you do that?
 
 2. You could adapt your game so that at the end it asked if you wanted to play again, and then restarted the game without you having to click on the Run arrow.
 
