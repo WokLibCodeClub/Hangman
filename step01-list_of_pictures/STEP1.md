@@ -10,6 +10,21 @@ In the starter project we have already started a list variable called ```picture
 
 These pictures are really just combinations of text symbols arranged cleverly so they seem to draw a picture. The symbols used so far are ```_ | O /```. By adding these and other text symbols you will be able to draw the person's body, arms and legs.
 
+## Quick look at what's in the starter project
+
+There are two ```import``` statements at the beginning of the starter project, which will import functions from external Python *libraries* which we will need in our code. The ```random``` library contains all sorts of functions connected with random numbers, which are always useful in games; and the ```os``` library is for functions which access parts of the computer *Operating System*, such as the function for clearing the screen.
+
+If you look at the end of the starter project you will see this code:
+
+```python
+# This next line clears the display area so you can draw the new
+# picture in the same place as the previous one without the
+# display scrolling. It works in Trinket but doesn't work in all Python editors.
+system('cls')
+```
+
+This is a command from the ```os``` library which clears the Results panel ready to draw the hangman shape again.
+
 ## Your first task
 
 Your first task is to add five more pictures to the pictures list: first add the body, then the left arm, then the right arm, then the left leg, then the right leg. We will use these pictures for 2, 3, 4, 5 and 6 wrong guesses.
