@@ -12,7 +12,7 @@ This is the overall sequence of our loop:
 
 3. - *if it isn't* the computer increases the number of wrong guesses by one; 
 
-- - *if it is* then the computer updates the ```word_with_guesses``` list and replaces underscores with the correct guessed letter
+    - *if it is* then the computer updates the ```word_with_guesses``` list and replaces underscores with the correct guessed letter
 
 4. the computer clears the screen and draws the right picture, depending on how many wrong guesses the player has already had
 
