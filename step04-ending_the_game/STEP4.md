@@ -100,6 +100,8 @@ How can Python tell if a particular item is present in a list?
 >
 > This will print ```True``` telling us that there are no underscores in the list.
 
+#### Now, back to the project
+
 Our code to break out of the forever loop if the player has won will use a Python ```if``` statement, and be something like
 
 ```python
