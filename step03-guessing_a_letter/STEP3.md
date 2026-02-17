@@ -142,7 +142,9 @@ Inside the ```for``` loop, (which means any lines of code inside the loop *must*
 
 In place of the question mark put the name of your loop variable. In Python if we want to check if two things are equal we use a *double equals sign*: ```==```.
 
-#### The player's guess is the same as the current letter
+There are now *two* possibilities:
+
+#### Possibility 1: the player's guess is the same as the current letter
 
 We have compared the player's guess with a letter in the mystery word. *If they are equal* we need to do two things
 
@@ -166,7 +168,7 @@ We have compared the player's guess with a letter in the mystery word. *If they 
 
 Put your loop variable in place of the question mark.
 
-#### The player's guess is not the same as the current letter
+#### Possibility 2: the player's guess is not the same as the current letter
 
 If the player's guess and the current letter in the mystery word are *not equal* then we don't have to do anything - we just go on to check the next letter in the word, so we don't need to write any code for this.
 
