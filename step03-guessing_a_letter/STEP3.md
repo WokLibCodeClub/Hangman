@@ -152,13 +152,13 @@ We have compared the player's guess with a letter in the mystery word. *If they 
 
     <details><summary>Click here if you need to see how to do this</summary>
 
-```python
-    good_guess = True
-```
+    ```python
+        good_guess = True
+    ```
   
-</details>
+    </details>
 
-<p>
+    <p>
 
 - second, change the **list** where we are keeping the "word with guesses". Remember, at the start, this list contains just underscores. If the loop variable now has the value 3, and we have found that the player's guess matches the letter of the mystery word with index 3, then in the ```word_with_guesses``` list we need to replace the underscore at item index 3 of the list with the guessed letter, except we use the value of the loop variable instead of 3. The code to do this is
 
