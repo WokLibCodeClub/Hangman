@@ -232,6 +232,12 @@ If your code didn't work exactly as you want you will have to try and find the p
 
 We have only coded one guess by the player, then the code gets to the end and stops. In the next step we will put this section of code inside a loop which will continue until the player either wins or is hanged.
 
+### Check code
+
+You can look [here](ex_step3.md) to see an example of how the code might look if you've followed the instructions so far. (The list of pictures is not shown in this example.)
+
+### Next step
+
 [Go to Step 4 - More guesses, and ending the game](../step04-ending_the_game/STEP4.md)
 
 [Go back to previous page](../step02-choose_word_and_display/STEP2.md)
