@@ -8,7 +8,7 @@ Note how we have used *comments* to divide the code into sections - one called V
 
 At the start of the VARIABLES section we have made a list called ```pictures``` which at the moment has two items in it.
 
-Then, if you look at the end of the starter project you will see this code (with some explanatory comments as well):
+Then, if you look at the end of the starter project, you will see this code (with some explanatory comments as well):
 
 ```python
 system('cls')
