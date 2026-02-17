@@ -61,7 +61,7 @@ If the player has *won* then all the letters in the mystery word have been guess
 
 How can Python tell if a particular item is present in a list?
 
->#### Try this in the trinket console:
+>#### Try this in the [interactive Python console](https://trinket.io/console):
 >
 >Copy this line and paste it into the console
 >
