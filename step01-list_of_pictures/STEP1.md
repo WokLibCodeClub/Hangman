@@ -1,5 +1,27 @@
 # Creating the set of pictures in a list variable
 
+## Quick look at what's in the starter project
+
+There are two ```import``` statements at the beginning of the starter project, which will import functions from external Python *libraries* which we will need in our code. The ```random``` library contains all sorts of functions connected with random numbers, which are always useful in games; and the ```os``` library is for functions which access parts of the computer *Operating System*, such as the function for clearing the screen.
+
+Note how we have used *comments* to divide the code into sections - one called VARIABLES, and one called MAIN CODE.
+
+At the start of the VARIABLES section we have made a list called ```pictures``` which at the moment has two items in it.
+
+Then, if you look at the end of the starter project you will see this code (with some explanatory comments as well):
+
+```python
+system('cls')
+
+print(pictures[0])
+```
+
+The first line is a command from the ```os``` library which clears the Results panel ready to draw the hangman shape again. The second is a command to print the first item in the ```pictures``` list.
+
+You can Run the code without needing to add anything, to see the effect of these two lines.
+
+## Description of the project
+
 In this version of Hangman the player has six guesses at letters in the mystery word. Each time the player makes a *wrong* guess (guesses a letter which is ***not*** in the word) the picture adds an extra bit of body to the figure of the person being hanged.
 
 This means which picture we display is controlled by the number of wrong guesses: if there are no wrong guesses so far we show the picture with just the gallows; if there has been one wrong guess so far we show the gallows and the person's head, two wrong guesses and we show the gallows, head and body, and so on up to a maximum of six wrong guesses.
@@ -9,21 +31,6 @@ We can do this in Python by making a variable to hold the number of wrong guesse
 In the starter project we have already started a list variable called ```pictures``` and put the first two items (pictures) in the list, separated by a comma.
 
 These pictures are really just combinations of text symbols arranged cleverly so they seem to draw a picture. The symbols used so far are ```_ | O /```. By adding these and other text symbols you will be able to draw the person's body, arms and legs.
-
-## Quick look at what's in the starter project
-
-There are two ```import``` statements at the beginning of the starter project, which will import functions from external Python *libraries* which we will need in our code. The ```random``` library contains all sorts of functions connected with random numbers, which are always useful in games; and the ```os``` library is for functions which access parts of the computer *Operating System*, such as the function for clearing the screen.
-
-If you look at the end of the starter project you will see this code:
-
-```python
-# This next line clears the display area so you can draw the new
-# picture in the same place as the previous one without the
-# display scrolling. It works in Trinket but doesn't work in all Python editors.
-system('cls')
-```
-
-This is a command from the ```os``` library which clears the Results panel ready to draw the hangman shape again.
 
 ## Your first task
 
