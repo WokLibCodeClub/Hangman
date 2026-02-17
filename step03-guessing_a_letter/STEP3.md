@@ -181,7 +181,7 @@ Well, if the player's guess matched a letter in the word our ```if``` block will
 1. add one to the number of wrong guesses, and
 2. add the player's guessed letter to the list of wrong guesses.
 
-So *after* the ```for``` loop we can put in another ```if``` block to check the setting of ```good_guess```. This block is *not* part of the ```for``` loop, so this line is *not* indented at all:
+So *after* the ```for``` loop we can put in another ```if``` block to check the setting of ```good_guess```. This block is *not* part of the ```for``` loop, so the first line of this ```if``` block is *not* indented at all:
 
 ```python
 if good_guess == False:
