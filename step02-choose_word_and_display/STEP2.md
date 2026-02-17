@@ -127,6 +127,14 @@ The ```join()``` function is used to output the items in a list with a *separato
 
 We will want to use this line of code many times in the game, so we don't want it as part of the set up code, we want it in the *MAIN CODE* section of the project. So, make sure you put this line at the very end of the project code, just after the line where we print ```pictures[0]```.
 
+We'll print a blank line after this, to separate this part of the display from the continuation of the game. So add another line:
+
+```python
+print()
+```
+
+which will print a blank line.
+
 ## Giving away the mystery word
 
 Now we do something which seems a bit silly: we get the computer to display the mystery word. Add this line in the *MAIN CODE* block of the project *after* the line which prints ```pictures[0]``` and before the line with the ```join()``` command:
