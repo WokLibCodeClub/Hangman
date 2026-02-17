@@ -32,7 +32,7 @@ We're going to need two new variables - put these in the *VARIABLES* block of co
 
 1. Make a variable for the number of wrong guesses and set it equal to 0. I called mine ```num_wrong_guesses``` but you can choose your own name. Do you remember how to make a variable and set its value to 0?
 
-2. Make a variable which will hold a *list* of all the player's wrongly guessed letters (see step 6 in the list above) and set it to be an empty list. I called mine ```wrong_guesses_list```. To set a variable to an empty list make its value equal to ```[]```.
+2. Make a variable which will hold a *list* of all the player's wrongly guessed letters (see number 6 in the list above) and set it to be an empty list. I called mine ```wrong_guesses_list```. To set a variable to an empty list make its value equal to ```[]```.
 
 ---
 
@@ -96,6 +96,8 @@ Add this line of code after the line with the ```upper()``` function to make the
 good_guess = False
 ```
 
+(Make sure you use a capital **F** for ```False```.)
+
 ## Is the player's guessed letter in the mystery word?
 
 Once the player has guessed a letter we need to go through every letter in the mystery word to see if the guessed letter is in the word. We'll do this with a Python ```for``` loop, and it needs to repeat exactly once for each letter in the mystery word.
@@ -146,7 +148,7 @@ We have compared the player's guess with a letter in the mystery word. *If they 
 
 - first, add a line of code to change the Boolean variable ```good_guess``` to be True (this line has to be indented *twice* as it is inside the ```for``` loop *and* inside the ```if``` block)
 
-<details><summary>Click here if you need to see how to do this</summary>
+    <details><summary>Click here if you need to see how to do this</summary>
 
 ```python
     good_guess = True
