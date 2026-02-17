@@ -150,6 +150,10 @@ There are some modifications you could put into your game:
 
 Have fun.
 
+### Check code
+
+You can look [here](ex_step4md) to see an example of how the complete code might look if you've followed the instructions so far.
+
 [Instructions for importing your own word list](../Importing_your_own_word_list/import_your_own_word_list.md)
 
 [Return to main page](../README.md)
