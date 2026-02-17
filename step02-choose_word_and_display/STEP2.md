@@ -113,7 +113,9 @@ word_with_guesses = '_' * len(word_to_guess)
 word_with_guesses = list(word_with_guesses)
 ```
 
-## Displaying the word with guesses with spaces
+## Displaying ```word_with_guesses``` with spaces between the letters
+
+**NOTE: the next two lines of code need to go at the end of your code, in the section labelled MAIN CODE, and *after* the line which prints the first picture.**
 
 Now we have our "word with guesses" as a list we can use a special string function for printing the list with a space between each item in the list. That function is the ```join()``` function, and the code we need looks like this:
 
