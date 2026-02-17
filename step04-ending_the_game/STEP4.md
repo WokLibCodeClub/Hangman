@@ -2,7 +2,7 @@
 
 We're now going to put all the code for the player's guess inside a loop so the player can keep on guessing letters.
 
-First, though, we will add one more line of code at the very end of the project, to print a blank line after printing the word with underscores. Do you remember how to print a blank line?
+First, though, we will add one more line of code at the very end of the project, to print a blank line after printing the list with wrong guesses. Do you remember how to print a blank line?
 
 <details><summary>Click here if you need to see how to do this</summary>
 
