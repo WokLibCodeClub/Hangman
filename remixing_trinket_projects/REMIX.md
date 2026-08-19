@@ -1,5 +1,7 @@
 # Remixing a trinket project
 
+*Note: the images on this page were created using the original version of trinket called trinket.io, which has now been replaced by trinket.strivemath.org. You will see slight differences from the pictures when you remix projects.*
+
 Unfortunately when you first remix a trinket project you don't see a button to Save your project. Here is a procedure which will get you to the correct window so you can edit and save your remixed project.
 
 1. First you have to be logged in to your trinket account
