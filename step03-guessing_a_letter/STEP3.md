@@ -10,7 +10,7 @@ This is the overall sequence of our loop:
 
 2. the computer checks if that letter is in the mystery word
 
-3. - *if it isn't* the computer increases the number of wrong guesses by one; 
+3. - *if it isn't* the computer increases the number of wrong guesses by one;
 
     - *if it is* then the computer updates the ```word_with_guesses``` list and replaces underscores with the correct guessed letter
 
@@ -72,7 +72,7 @@ which will convert anything the player types into upper case.
 
 >#### Experimenting with ```upper()```
 >
->You can experiment with ```upper()``` in the [trinket Interactive Python Console](https://trinket.io/console). Open the console and type
+>You can experiment with ```upper()``` in the [trinket Interactive Python Console](https://trinket.strivemath.org/console). Open the console and type
 >
 >```python
 >"Hello".upper()
@@ -199,21 +199,21 @@ We are nearly done with coding the player's guess!
 
 We just a few more lines of code to complete coding the player's guess, and these lines go after the last ```if``` block. They are *not* indented:
 
-first, clear the screen using
+- first, clear the screen using
 
 ```python
 system('cls')
 ```
 
-second, ```print``` the picture from the list of pictures which matches the number of wrong guesses the player has made. This will be almost the same as the line we used previously to print the first picture ```print(pictures[0])```, except you should **edit** it, so in place of the 0 you put the variable for the number of wrong guesses.
+- second, ```print``` the picture from the list of pictures which matches the number of wrong guesses the player has made. This will be almost the same as the line we used previously to print the first picture ```print(pictures[0])```, except you should **edit** it, so in place of the 0 you put the variable for the number of wrong guesses.
 
-(Since the player has only made one guess so far the number of wrong guesses can only be 0 or 1.)
+- (Since the player has only made one guess so far the number of wrong guesses can only be 0 or 1.)
 
-thirdly, we want to repeat the line which gives away the mystery word - copy this line from higher up in the code
+- thirdly, we want to repeat the line which gives away the mystery word - copy this line from higher up in the code
 
-fourthly, we want to copy the line which prints the mixture of underscores and letters and uses the ```join()``` command (again copy this from higher up in the code)
+- fourthly, we want to copy the line which prints the mixture of underscores and letters and uses the ```join()``` command (again copy this from higher up in the code)
 
-lastly, we want to print a list of any wrong guesses the player has made. (At this stage there will either be one or none.) If the player has only made good guesses we don't need to print this list, so we can use another ```if``` statement to decide whether to print it or not. We do this by testing the length of the list of wrong guesses - if the length is 0 then we don't need to print it. If the length is more than zero then we do print it. Notice we are using the ```join()``` command again, to insert spaces between each item in the list. Here is the code:
+- lastly, we want to print a list of any wrong guesses the player has made. (At this stage there will either be one or none.) If the player has only made good guesses we don't need to print this list, so we can use another ```if``` statement to decide whether to print it or not. We do this by testing the length of the list of wrong guesses - if the length is 0 then we don't need to print it. If the length is more than zero then we do print it. Notice we are using the ```join()``` command again, to insert spaces between each item in the list. Here is the code:
 
 ```python
 if len(wrong_guesses_list) > 0:
