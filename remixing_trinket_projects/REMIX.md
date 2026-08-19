@@ -28,9 +28,4 @@ Unfortunately when you first remix a trinket project you don't see a button to S
 
 You are now ready to start editing.
 
-
 Go back to the main page of [Hangman](../README.md)
-
-
-
-
