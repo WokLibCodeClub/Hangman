@@ -6,11 +6,11 @@ Here is a link to a video showing how the game works. (Note: if you already know
 
 [https://youtu.be/FOJO9RdFEF8](https://youtu.be/FOJO9RdFEF8)
 
-This Python project has been designed to be built up using the website Trinket [trinket.io](https://trinket.io/) so you should make sure you have a Trinket account before you start this project. If you have an email address you can open a new account at [trinket.io](https://trinket.io/) by clicking on the button labelled Sign Up.
+This Python project has been designed to be built up using the online Python editor [trinket.strivemath.org](https://trinket.strivemath.org/) so you should make sure you have a Trinket account before you start this project. If you have an email address you can open a new account at [trinket.strivemath.org](https://trinket.strivemath.org/) by clicking on the button labelled Sign Up.
 
 There is a starter Trinket project called *Hangman_starter* which you can find at
 
-[https://trinket.io/library/trinkets/df98f23340](https://trinket.io/library/trinkets/df98f23340)
+[https://trinket.strivemath.org/library/trinkets/df98f23340](https://trinket.strivemath.org/library/trinkets/df98f23340)
 
 You should Remix this project, then save it in your account and rename it, so you can work on your own version.
 
